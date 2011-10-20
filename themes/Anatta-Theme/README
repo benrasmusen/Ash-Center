@@ -1,0 +1,57 @@
+This is simply my standard blank HTML5 Wordpress theme. I use it as a jumping-off point for my
+projects. It is based heavily on the "Blank" theme by Chris Coyier (it can be found at digwp.com).
+The original theme is HTML4, so I HTML5'd it up and am adding a couple of stuff such as:
+- four widget areas in convenient places for me: Header, Nav (for WP3 menu), Sidebar, Footer
+- WP3 menus (create your menus and add as widgets within WP)
+- a bunch of stuff in the functions.php file
+- my very specific, and probably wrong, HTML5 document structure. If you think it is wrong, (for
+  example, I don't think that I'm using <aside> correctly), let me know. A good thing, though - I am
+  not using a wrapper div. The .body class works just fine for that in most cases.
+
+That document structure is as follows:
+BODY [body class, not to be confused with .body]
+-HEADER.body
+-NAV.body
+-SECTION.body [.index .page .single .archive]
+--aside
+--article [post class]
+---header
+---section
+---footer
+----section.comments
+-----article[.alt]
+------header
+------[comment text]
+--nav.pagination
+---ul
+---li (there are two li's, one for "prev posts" and one for "next posts")
+-FOOTER.body
+
+I use a modified Toucan CSS Reset combined with some ideas from the CSS LESS framework (media
+queries for different screen sizes). I also place my CSS files in a <theme>/css folder and that
+location is used in the header.php file of the theme. The normal style.css is used only for theme
+information.
+
+I use "box-sizing: border-box" in my reset stylesheet for layout elements. This means that browsers
+will calculate width and height to INCLUDE padding and border on those elements... see
+http://css-tricks.com/box-sizing/ for more info on this. This works in Gecko/Webkit browsers, Opera,
+and IE 8+. See below for my IE7- workaround.
+
+There are a couple template html files for easy development.
+
+My IE fallback system is pretty specific to my workflow as well:
+- For IE9, I do nothing at this time
+- IE8 is caught in the [if lt IE 9] conditional comment that contains the html5shiv and ie.css (IE
+  stylesheet) so adjustments can be made to the layout if needed.
+- IE7 and IE6 are also caught in the [if lt IE 9] conditional comment. They also get a different
+  <html> tag that contains [class="ie7"]. This is because IE7 and below don't work with the
+  box-sizing trick above, so we need to define different widths on those elements. ie.css has
+  several extra "reset" styles built in.
+- Note: I'm using html5shiv. If you use Modernizr, that already has the shiv built in
+- Note: IE 6-8 don't support media queries and will use the default 768px layout. You can use this
+  script: http://code.google.com/p/css3-mediaqueries-js/ to enable your media queries in IE
+
+I guarantee that this whole theme will change over time.
+
+Comments/Questions? Contact me at my site http://ajy.co or try leaving a comment here. Maybe I'll
+see it.

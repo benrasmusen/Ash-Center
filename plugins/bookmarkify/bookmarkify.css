@@ -1,0 +1,178 @@
+/*******************************************************************************
+bookmarkify.css
+
+This style sheet if for the Bookmarkify plugin for WordPress
+
+Copyright 2008 GARA Systems, Inc.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+HISTORY (version cooresponds to history of bookmarkify.php)
+
+Version		Date		Author		Description
+--------	--------	-----------	------------------------------------------
+0.1			20080222	Gary		Initial version
+0.2			20080223	Gary		No Change
+0.3			20080224	Gary		No Change
+0.4			20080225	Gary		Created the copyhtml and linkbuttons class 
+0.5			20080226	Gary		Created the title class
+..
+0.8			20080310	Gary		Disabled the copyhtml class
+							Added hover style for div.brand a
+0.8.3			20080311	Gary		Removed deprecated style definitions.
+0.8.9			20080318	Gary		Change default theme to "Subdued"
+
+INSTALLATION
+	
+To use this style sheet with Bookmarkify do one of the following:
+
+1.  Add the blog to your site:
+
+Upload this file to your website and link to it in from your Blog theme's
+header file.
+
+OR
+
+Copy the contents of this file to your theme's active style sheet.
+
+2.  Modify the style settings to integrate the design with your site.
+
+
+For more Themes visit http://www.gara.com/projects/bookmarkify/
+
+
+*******************************************************************************/
+
+div.bookmarkify
+{
+	margin: 0px;
+	border: none;
+	padding: 0px;
+
+	height: 1%;
+
+	background: transparent;
+	
+	text-align: left;
+	vertical-align: middle;
+	
+	font-family: verdana, arial;
+	font-size: 12px;
+}
+
+div.bookmarkify a
+{
+	text-decoration: none;
+	
+	font-family: verdana, arial;
+}
+
+div.bookmarkify a:hover
+{
+	text-decoration: underline;
+}
+
+div.bookmarkify div.title
+{
+	margin: 0px;
+	border: none;
+	padding: 0px;
+
+	height: 1%;
+
+	background: transparent;
+	
+	vertical-align: auto;
+
+	font-weight: bold;
+}
+
+div.bookmarkify div.linkbuttons
+{
+	margin: 0px;
+	border: none;
+	padding: 2px;
+
+	height: 1%;
+
+	background: transparent;
+	
+	vertical-align: auto;
+}
+
+div.bookmarkify div.linkbuttons a
+{
+	margin: 0px;
+	border: none;
+	padding: 2px;
+
+	height: 1%;
+
+	background: transparent;
+	
+	vertical-align: auto;
+}
+
+div.bookmarkify div.linkbuttons a:hover
+{
+}
+
+div.bookmarkify div.linkbuttons a img
+{
+	margin: 0px;
+	border: none;
+	padding: 0px;
+
+	background: transparent;
+	opacity: 0.5;
+	filter:alpha(opacity=50); 
+	
+	vertical-align: auto;
+}
+
+div.bookmarkify div.linkbuttons a:hover img
+{
+	opacity: 1;
+	filter:alpha(opacity=100); 
+}
+
+div.bookmarkify div.brand
+{
+	margin: 0px;
+	border: none;
+	padding: 2px;
+
+	height: 1%;
+
+	background: transparent;
+	
+	vertical-align: auto;
+}
+
+div.bookmarkify div.brand a
+{
+	margin: 0px;
+	border: none;
+	padding: 0px;
+
+	height: 1%;
+
+	background: transparent;
+	
+	vertical-align: auto;
+
+	color: gray;
+	font-weight: normal;
+}
+
+div.bookmarkify div.brand a:hover
+{
+}

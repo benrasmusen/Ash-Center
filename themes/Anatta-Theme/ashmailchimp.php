@@ -16,7 +16,7 @@ if(isset($_POST) && $_POST['subscribe'] != '')
 <div id="mc_embed_signup">
 <form action="<?=$_SERVER['REQUEST_URI']; ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" >
 	
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address">
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 </form>
 </div>

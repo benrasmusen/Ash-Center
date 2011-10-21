@@ -41,7 +41,7 @@
             $text = strip_tags($text, '<strong>');
             //ALLOWED tags (will be rendered) - could add more
             //They count against the word count below, though
-			$excerpt_length = 55; //default excerpt is 55 words
+			$excerpt_length = 25; //default excerpt is 55 words
 			$words = explode(' ', $text, $excerpt_length + 1);
 			
 			if (count($words)> $excerpt_length) {

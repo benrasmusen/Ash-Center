@@ -1,7 +1,37 @@
 	<footer class="sitefooter">
 		<div class="body">
         <div class="footer-navigation left">
-        	<div>
+        <div class="footer-search">
+       <div id="cse-search-form2">Loading</div>
+<script src="//www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+ google.load('search', '1', {language : 'en'});
+ google.setOnLoadCallback(function() {
+   var customSearchControl = new google.search.CustomSearchControl('009712716464247912388:zmtpp-vfuss');
+   customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+   var options = new google.search.DrawOptions();
+   options.enableSearchboxOnly("http://ashcenter.wordpressprojects.com/", "s");
+   customSearchControl.draw('cse-search-form2', options);
+ }, true);
+</script>
+<style type="text/css">
+  .sitefooter input.gsc-input {
+    border:none;
+	padding:5px 10px;
+	border:none;
+	background-image:url(http://ashcenter.wordpressprojects.com/wp-content/themes/Anatta-Theme/images/footer-input-bg.png)!important;
+	width:276px!important;
+	height:35px!important;
+	outline:none;
+	background-repeat:repeat!important;
+	background-color:transparent!important;
+
+
+	
+  }
+</style>
+        </div>
+        	<div class="footer-links">
              <dl>
                 <dt>Dr. Ash:</dt>
                 <dd>
@@ -130,16 +160,27 @@
                 	<small>Contact us</small>
                     <big>888.888.8888</big>
                 </li>
-                <li class="item-2">Dr Ash</li>
-                <li class="item-3">Dr Ash</li>
+                <li class="item-2">#RichardAshMD</li>
+                <li class="item-3">DoctorAsh</li>
                 <li class="item-4">Dr Ash</li>
                 <li class="item-5">
+                <small>Newsletter</small>
                 <?php include_once(TEMPLATEPATH.'/ashmailchimp.php'); //mailchimp code?>
+                <a href="#">Sign Up Now For Appointments  </a>
                 </li>
             </ul>
-        
+        </div>
+         <div class="clear"></div>
+         <div class="bottom-nav">
+        	<p class="left">
+            <a href="#">©<?php the_time('Y');?>. Dr. Ash Center</a>
+            </p>
+            <p class="right">
+            <a href="<?php bloginfo('url');?>/terms-of-use/">Terms of Use</a><span>|</span><a href="<?php bloginfo('url');?>/privacy-policy/">Privacy Policy</a>
+            </p>
         </div>
         </div>
+       
 		<!-- <p>
 			<span>Copyright</span> &copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?> |
 			<a href="http://ajy.co/"><span>Website Designed by</span> Aaron James Young</a>

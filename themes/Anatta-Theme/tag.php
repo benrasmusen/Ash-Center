@@ -8,19 +8,20 @@
  */
 
 get_header(); ?>
-<section class="body archive">
-		<?php if (have_posts()) : ?>
+<section class="body blog">
+      		<div id="blog-inner" class="left-column">		
+			<?php if (have_posts()) : ?>
 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 			<?php if( is_tag() ) { ?>
-				<h1>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h1>
+				<header><h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2></header>
 			<?php /* If this is a daily archive */ } ?>
 			<?php while (have_posts()) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				<h6><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h6>
 				
 			</header>
-			<section>
+			<section class="posts">
 				<?php 
 				global $more;    // Declare global $more (before the loop).
 				$more = 0;       // Set (inside the loop) to display content above the more tag.
@@ -28,7 +29,7 @@ get_header(); ?>
 				?>
 			</section>
 			<footer> <!-- post metadata -->
-				<p><?php the_tags('<span>Tags:</span> ', ', ', ''); ?></p>
+				<p class="tag_page"><?php the_tags('<span >Tags:</span> ', ' ', ''); ?></p>
 				
 			</footer>
 		</article>
@@ -43,7 +44,12 @@ get_header(); ?>
 			</header>
 		</article>
 		<?php endif; ?>
+        </div>
+            <div class="right-column">
+        <div id="sidebar">
          <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('blog-sidebar') ) : else : // Blog Sidebar?>
     <?php endif; ?>
-	</section>
-<?php get_footer(); ?>
+  </div>
+        </div>
+        <div class="clear"></div>
+	</section><?php get_footer(); ?>

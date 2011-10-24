@@ -61,10 +61,10 @@
         <?php 
 			$url = explode('/',$_SERVER['REQUEST_URI']);
 			$req_url = $url[1];
-			if($req_url == 'dr-ash' ) {  $drclass = "class='active'"; }
+			if($req_url == 'dr-ash' || $req_url =='testimonials'  || $req_url == 'photo-gallery-3' || $req_url == 'story' || $req_url == 'radio-show') {  $drclass = "class='active'"; }
 			if($req_url == 'blog' || is_search() || is_month() || is_author() || is_single() || is_category() || is_tag() || is_year() ) {  $blogclass = "class='active'"; } 
-			if($req_url == 'wellnest' ) {  $wellclass = "class='active'"; }
-			if($req_url == 'ash-center' ) {  $ashclass = "class='active'"; }
+			if($req_url == 'wellnest'  || $req_url == 'trainer-listing' || $req_url == 'event-listing' || $req_url == 'location'  || $req_url == 'about' || $req_url == 'photo-gallery-2') {  $wellclass = "class='active'"; }
+			if($req_url == 'ash-center' || $req_url == 'photo-gallery-1' || $req_url == 'patient-information' || $req_url == 'treatment-options' || $req_url == 'specialities' || $req_url =='location-ash-center') {  $ashclass = "class='active'"; }
 						
 		?>
         	<li <?=$drclass?>><a href="<?php bloginfo('url'); ?>/dr-ash">Dr. Ash <small>the expert</small></a></li>
@@ -78,16 +78,15 @@
 	</div>
 	</header>
     <?php if($req_url == 'blog' || is_search() || is_month() || is_author() || is_single() || is_category() || is_tag() || is_year() ) { ?>
-    <div class="page-header">
-    <div class="body">
-    		Blog – advice and news from the leading experts in alternative medicine
-    </div>
-    </div>
-    <?php } 
+    <div class="page-header"> <div class="body">Blog – advice and news from the leading experts in alternative medicine
+    </div></div>
+   <?php } 
 	if($req_url == 'dr-ash' ) { ?>
-	<div class="page-header">
-    <div class="body">
-    		Dr. Ash
-    </div>
-    </div>
-	<?php } ?>
+	<div class="page-header"><div class="body">Dr. Ash</div></div>
+	<?php } if($req_url == 'wellnest' ) {?>
+	<div class="page-header"><div class="body">WellNest</div></div>
+   <?php } if($req_url == 'trainer-listing' ) {?>
+	<div class="page-header"><div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Trainer</div> </div>
+ <?php } if($req_url == 'event-listing' ) {?>
+	<div class="page-header"> <div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Event</div></div>
+   <?php } ?>	

@@ -35,25 +35,11 @@
              <dl>
                 <dt>Dr. Ash:</dt>
                 <dd>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a>
+                <a href="<?php bloginfo('url');?>/photo-gallery-3/">Photo Gallery</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/testimonials/">Testimonials</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/story/">Story</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/radio-show/">Radio Show</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/media-listing/">Media</a>
                 </dd>
              </dl>
              <dl>
@@ -107,49 +93,23 @@
              <dl>
                 <dt>WellNest:</dt>
                 <dd>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a>
+                <a href="<?php bloginfo('url');?>/about/">About</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/location/">Location</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/class-schedule/">Schedule</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/trainer-listing/">Trainers</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/event-listing/">Events</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/photo-gallery-2/">Photo Gallery</a>
                 </dd>
              </dl>
              <dl>
               <dt>Ash Center:</dt>
                 <dd>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a>
+                <a href="<?php bloginfo('url');?>/location-ash-center/">Location</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/patient-information/">Patient's Information</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/specialities/">Specialities</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/treatment-options/">Treatments</a><span>|</span>
+                <a href="<?php bloginfo('url');?>/photo-gallery-1/">Photo Gallery</a>
+                
                 </dd>
              </dl>
          </div>    

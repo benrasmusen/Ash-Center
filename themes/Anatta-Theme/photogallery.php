@@ -5,26 +5,18 @@ Template Name: Photo Gallery
 ?>
 
 <?php get_header(); ?>
-	<section class="body page">
+	<section class="body blog">
+    <div class="" style="float:left; width:600px;">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1><?php the_title(); ?></h1>
-				<p> <!-- edit this meta stuff? -->
-					<span>Posted on:</span> <?php the_time('F jS, Y'); ?>
-					<span>by</span> <?php the_author(); ?> |
-					<?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
-				</p>
+				<h2><?php the_title(); ?></h2>
+				
 			</header>
 			<section>
 				<?php the_content(); ?>
 			</section>
-			<footer> <!-- post metadata -->
-				<p><?php the_tags('<span>Tags:</span> ', ', ', ''); ?></p>
-				<p><span>Posted in</span> <?php the_category(', ') ?> | 
-				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-				<?php comments_template(); ?>
-			</footer>
+			
 		</article>
 		<?php endwhile; ?>
 		<?php else : ?>
@@ -34,6 +26,12 @@ Template Name: Photo Gallery
 			</header>
 		</article>
 		<?php endif; ?>
-	<?php get_sidebar(); ?>
+        <div class="clear"></div>
+        </div>
+	<div class="right-column">
+    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('page-sidebar') ) : else : // Sidebar for wp pages ?>
+    <?php endif; ?>
+  </div>
+  <div class="clear"></div>
 	</section>
 <?php get_footer(); ?>

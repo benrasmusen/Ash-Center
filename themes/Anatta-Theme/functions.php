@@ -84,9 +84,9 @@
 
 	// sidebars / widget areas: I have one in the header, nav, sidebar, and footer
     register_sidebar(array(
-        'name' => 'Sidebar Widgets',
+        'name' => 'Homepage Sidebar',
         'id'   => 'sidebar-widgets',
-        'description'   => 'These are widgets for the sidebar.',
+        'description'   => 'These are widgets for the homepage sidebar.',
         //'before_widget' => '<div id="%1$s" class="widget %2$s">',
         //'after_widget'  => '</div>',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -135,6 +135,24 @@
         'after_title'   => '</h2>'
     ));
 	
+	register_sidebar(array(
+        'name' => 'Wellnest Page Sidebar',
+        'id'   => 'wellnest-page-sidebar',
+        'description'   => 'These are widgets for Wellnest Page.',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>'
+    ));
+	register_sidebar(array(
+        'name' => 'Page Sidebar',
+        'id'   => 'page-sidebar',
+        'description'   => 'These are widgets for wp Pages.',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>'
+    ));
 
 	//getting current category ID	
 	function getCurrentCatID(){
@@ -164,7 +182,7 @@
     function yourtheme_setup() {
 
     // This theme uses post thumbnails
-    add_theme_support( 'post-thumbnails' );
+    //add_theme_support( 'post-thumbnails' );
 
     // Your changeable header business starts here
     define( 'HEADER_TEXTCOLOR', '' );
@@ -257,4 +275,25 @@
     <?php
     }
     endif;
+
+//function for getting first post image	
+ function catch_that_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $first_img = $matches [1] [0];
+
+  if(empty($first_img)){ //Defines a default image
+    //$first_img = "/images/default.jpg";
+  }
+  else 
+  {
+ 	  }
+  return $first_img;
+}
+
+//adding excerpt support on wp page
+add_post_type_support( 'page', 'excerpt' );
     ?>

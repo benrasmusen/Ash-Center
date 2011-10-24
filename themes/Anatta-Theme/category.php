@@ -28,8 +28,38 @@ get_header(); ?>
 				?>
 			</section>
 			<footer> <!-- post metadata -->
-				<p><big><span>Author Name:</span> <?php the_author_posts_link(); ?></big></p>
-			</footer>
+        <div class="post-footer-thumb left"> <a class="this-soc" href="<?php bloginfo('url');?>/?author=<?php echo $post->post_author ?>">
+          <? userphoto_the_author_thumbnail(); //user thumbnail?>
+          </a> </div>
+        <div class="post-footer-content left"> Posted by
+          <?php the_author_posts_link(); ?>
+          on
+          <?php the_time('M d, Y') ?>
+          <span>|</span>
+          <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+          <!--Social sharing buttons code---->
+          <div class="post-footer-share-cat">
+            <div class="left"></div>
+            <fb:like profile_id="DoctorAsh" href="<?php the_permalink(); ?>" font="lucida grande" colorscheme="light" width="45" height="30" show_faces="false" layout="button_count"></fb:like>
+            <!-- Place this tag where you want the +1 button to render -->
+            <div class="right gplus">
+              <g:plusone annotation="bubble" width="66" href="<?php the_permalink(); ?>"></g:plusone>
+            </div>
+            
+            <!-- Place this render call where appropriate --> 
+            <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+            <div class="right"> <a href="http://twitter.com/share?url=<?php echo urlencode(wp_get_shortlink()); ?>&amp;counturl=<?php urlencode(the_permalink()); ?>" class="twitter-share-button" data-count="horizontal" data-via="RichardAshMD">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+            </div>
+            <!--Social sharing buttons code---> 
+          </div>
+        </div>
+      </footer>
 		</article>
 		<?php endwhile; ?>
 		<nav class="pagination">

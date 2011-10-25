@@ -120,9 +120,9 @@
                 	<small>Contact us</small>
                     <big>888.888.8888</big>
                 </li>
-                <li class="item-2">#RichardAshMD</li>
-                <li class="item-3">DoctorAsh</li>
-                <li class="item-4">Dr Ash</li>
+                <a href="http://www.twitter.com/RichardAshMD/" target="_blank"><li class="item-2">#RichardAshMD</li></a>
+                <a href="http://www.facebook.com/DoctorAsh/" target="_blank"><li class="item-3">DoctorAsh</li></a>
+                <a href="<?php bloginfo('url'); ?>/contact/" ><li class="item-4">Dr Ash</li></a>
                 <li class="item-5">
                 <small>Newsletter</small>
                 <?php include_once(TEMPLATEPATH.'/ashmailchimp.php'); //mailchimp code?>

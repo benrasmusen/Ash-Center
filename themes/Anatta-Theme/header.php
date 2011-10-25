@@ -48,7 +48,7 @@
 		// We have a new header image!
 		echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
 		else : ?>
-		<a href="<?php bloginfo('url');?>"><img style="margin-top:38px;" src="<?php header_image(); ?>" width="250px" height="60px"  alt="" /></a>
+		<a href="<?php bloginfo('url');?>"><img class="logo" src="<?php header_image(); ?>" width="250px" height="60px"  alt="" /></a>
 		<?php endif; ?>
          <!--Custom Header Code ends here-->
          
@@ -89,4 +89,6 @@
 	<div class="page-header"><div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Trainer</div> </div>
  <?php } if($req_url == 'event-listing' ) {?>
 	<div class="page-header"> <div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Event</div></div>
+   <?php } if($req_url == 'ash-center' ) {?>
+	<div class="page-header"> <div class="body">Ash Center</div></div>
    <?php } ?>	

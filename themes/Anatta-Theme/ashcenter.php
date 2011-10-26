@@ -61,7 +61,7 @@ Template Name: Ash Center
 			 	<ul>
         		<div class="char-heading"  ><?=$x?></div>
 			<?php	   
-			 $pages = get_pages('child_of=195&sort_column=post_name&sort_order=asc'); //showing subpages of Conditions we treat page
+			$pages = get_pages('child_of=195&sort_column=post_name&sort_order=asc'); //showing subpages of Conditions we treat page
 			foreach($pages as $page) {
 			             
 			$caps = ucwords(strtolower($page->post_title));
@@ -125,17 +125,16 @@ Template Name: Ash Center
 		echo "<h3>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
+     <ul>
        <?php
 		$pages = get_pages('child_of=632&sort_column=post_date&sort_order=asc'); //showing subpages of Treatment Options Page
 		foreach($pages as $page) {?>
 	
-			<div class="section" >
-				<h5><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a></h5>
-				
-			</div>
+			<li><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a></li>
+		
 	
 		<?php } ?>	 
-    
+    	</ul>
      <div class="clear"></div>
      </div>
      <div class="right-column">

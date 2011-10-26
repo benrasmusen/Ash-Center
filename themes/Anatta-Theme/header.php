@@ -81,14 +81,14 @@
     <div class="page-header"> <div class="body">Blog – advice and news from the leading experts in alternative medicine
     </div></div>
    <?php } 
-	if($req_url == 'dr-ash' ) { ?>
+	if($req_url == 'dr-ash' || $req_url =='testimonials'  || $req_url == 'photo-gallery-3' || $req_url == 'story' || $req_url == 'radio-show') { ?>
 	<div class="page-header"><div class="body">Dr. Ash</div></div>
-	<?php } if($req_url == 'wellnest' ) {?>
+	<?php } if($req_url == 'wellnest' || $req_url == 'location'  || $req_url == 'about' || $req_url == 'photo-gallery-2' ) {?>
 	<div class="page-header"><div class="body">WellNest</div></div>
    <?php } if($req_url == 'trainer-listing' ) {?>
 	<div class="page-header"><div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Trainer</div> </div>
  <?php } if($req_url == 'event-listing' ) {?>
 	<div class="page-header"> <div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Event</div></div>
-   <?php } if($req_url == 'ash-center' ) {?>
+   <?php } if($req_url == 'ash-center' || $req_url == 'photo-gallery-1' || $req_url == 'patient-information' || $req_url == 'treatment-options' || $req_url == 'specialities' || $req_url =='location-ash-center') {?>
 	<div class="page-header"> <div class="body">Ash Center</div></div>
    <?php } ?>	

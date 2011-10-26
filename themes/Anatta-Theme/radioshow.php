@@ -3,37 +3,44 @@
 Template Name: Radio Show
 */
 ?>
-
 <?php get_header(); ?>
-	<section class="body page">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1><?php the_title(); ?></h1>
-				<p> <!-- edit this meta stuff? -->
-					<span>Posted on:</span> <?php the_time('F jS, Y'); ?>
-					<span>by</span> <?php the_author(); ?> |
-					<?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
-				</p>
-			</header>
-			<section>
-				<?php the_content(); ?>
-			</section>
-			<footer> <!-- post metadata -->
-				<p><?php the_tags('<span>Tags:</span> ', ', ', ''); ?></p>
-				<p><span>Posted in</span> <?php the_category(', ') ?> | 
-				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-				<?php comments_template(); ?>
-			</footer>
+	<section class="body blog">
+<div id="blog-inner" class="left-column">	
+     <article>
+        <header>
+            <h3>RADIO SHOW</h3>		
+        </header>
+        <?php include_once(ABSPATH.WPINC.'/feed.php');
+		 $rss = fetch_feed('http://www.wor710.com/pages/podcast/549.rss');
+		 $max = $rss->get_item_quantity(50);
+		 $rss_items = $rss->get_items(0, $max);
+		 ?>
+		 <ul>
+		<?php
+		 foreach ( $rss_items as $item ) : ?>
+		 <li>
+		<?php $title_feeds = $item->get_title();
+		$feeds = explode('-',$title_feeds); ?>
+		 <a href='<?php echo $item->get_permalink(); ?>'
+		 title='<?php echo 'Posted '.$item->get_date('j F Y | g:i a'); ?>' target="_blank">
+		 <?php echo $feeds[0]; ?></a><br/>
+		<?php echo $feeds[1]." - ".$feeds[2]; ?>
+		<br/>
+		<?php  $play =  $item->get_permalink();
+		insert_audio_player("[audio:$play]");  ?>
+		 </li>
+		 <?php endforeach; ?>
+		 </ul>
+			
 		</article>
-		<?php endwhile; ?>
-		<?php else : ?>
-		<article>
-			<header>
-				<h2>Not Found</h2>
-			</header>
-		</article>
-		<?php endif; ?>
-	<?php get_sidebar(); ?>
-	</section>
+		 <div class="clear"></div>
+			</div>
+		<div class="right-column">
+        <div id="sidebar">
+    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('page-sidebar') ) : else : // Sidebar for wp pages ?>
+    <?php endif; ?>
+  </div>
+        </div>
+  <div class="clear"></div>
+</section>
 <?php get_footer(); ?>

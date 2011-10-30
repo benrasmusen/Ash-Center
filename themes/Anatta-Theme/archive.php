@@ -84,6 +84,7 @@
             <!--Social sharing buttons code---> 
           </div>
         </div>
+        <div class="clear"></div>
       </footer>
 		</article>
 		<?php endwhile; ?>

@@ -5,9 +5,9 @@ Template Name: Ash Center
 */
 ?>
 <?php get_header(); ?>
-<section class="body ">
-<div class="" >
-<br/>
+<section class="body dr-ash" id="ash-center">
+
+
 	<?php
 	    $pageid = 91; // Photo Gallery Ash Center Page
 		$page_data = get_page( $pageid );
@@ -29,18 +29,19 @@ Template Name: Ash Center
 		$content = apply_filters('the_content', $page_data->post_content); // Get Content 
 		$title = $page_data->post_title; //get post title
 		echo "<article>";
-		echo "<h3>".strtoupper($title)."</h3>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
-     <div class="clear"></div>
-     <div class="" style="float:left; width:600px;">
+	 <div class="clear"></div>
+	 
+	 <div class="left-column">
      <?php
 	    $pageid = 195; //Conditions We Treat Page
 		$page_data = get_page( $pageid );
 		$content = apply_filters('the_content', $page_data->post_content); // Get Content 
 		$title = $page_data->post_title; //get post title
 		echo "<article>";
-		echo "<h3>".strtoupper($title)."</h3>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
     	 <?php	
@@ -51,6 +52,8 @@ Template Name: Ash Center
 			   $first_letter[] = $caps{0}; // first letter of word
 			   }
 			   $first_letter = array_unique($first_letter); ?>
+			   <div class="all-list-items">
+			   <div class="list-items">
      <?php
     	 for ($i=65; $i<=71; $i++) //displaying subpages from A to G
 			{
@@ -58,8 +61,8 @@ Template Name: Ash Center
 			 	if(in_array($x,$first_letter))
 			 	{
 			 	?>
-			 	<ul>
-        		<div class="char-heading"  ><?=$x?></div>
+			 	<ul class="ash-center-list">
+        		<div class="char-heading"  ><span><?=$x?></span></div>
 			<?php	   
 			$pages = get_pages('child_of=195&sort_column=post_name&sort_order=asc'); //showing subpages of Conditions we treat page
 			foreach($pages as $page) {
@@ -72,7 +75,9 @@ Template Name: Ash Center
 			} }      ?>
         </ul>
         <?php  } } ?>
-        <hr/>
+        
+        </div>
+         <div class="list-items">
      	<?php
     	 for ($i=72; $i<=80; $i++) //displaying subpages from H to P
 			{
@@ -80,8 +85,8 @@ Template Name: Ash Center
 			 	if(in_array($x,$first_letter))
 			 	{
 			 	?>
-			 	<ul>
-        		<div class="char-heading"  ><?=$x?></div>
+			 	<ul class="ash-center-list">
+        		<div class="char-heading"><span><?=$x?></span></div>
 			<?php	   
 			 $pages = get_pages('child_of=195&sort_column=post_name&sort_order=asc'); //showing subpages of Conditions we treat page
 			foreach($pages as $page) {
@@ -94,7 +99,8 @@ Template Name: Ash Center
 			} }      ?>
         </ul>
         <?php  } } ?>
-        <hr/>
+       </div>
+       <div class="list-items" style="margin-right:0px;">
         <?php
     	 for ($i=81; $i<=90; $i++) //displaying subpages from Q to Z
 			{
@@ -102,8 +108,8 @@ Template Name: Ash Center
 			 	if(in_array($x,$first_letter))
 			 	{
 			 	?>
-			 	<ul>
-        		<div class="char-heading"  ><?=$x?></div>
+			 	<ul class="ash-center-list">
+        		<div class="char-heading"  ><span><?=$x?></span></div>
 			<?php	   
 			 $pages = get_pages('child_of=195&sort_column=post_name&sort_order=asc'); //showing subpages of Conditions we treat page
 			foreach($pages as $page) {
@@ -116,16 +122,19 @@ Template Name: Ash Center
 			} }      ?>
         </ul>
         <?php }  } ?>
+        </div>
+        </div>
+        <div class="clear"></div>
         <?php
 	    $pageid = 632; //Treatment Options Page
 		$page_data = get_page( $pageid );
 		$content = apply_filters('the_content', $page_data->post_content); // Get Content 
 		$title = $page_data->post_title; //get post title
 		echo "<article>";
-		echo "<h3>".strtoupper($title)."</h3>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
-     <ul>
+     <ul class="list-bottom-items">
        <?php
 		$pages = get_pages('child_of=632&sort_column=post_date&sort_order=asc'); //showing subpages of Treatment Options Page
 		foreach($pages as $page) {?>
@@ -138,8 +147,10 @@ Template Name: Ash Center
      <div class="clear"></div>
      </div>
      <div class="right-column">
+     <div id="sidebar">
     <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('ash-center-sidebar') ) : else : // Sidebar for Ash Center ?>
     <?php endif; ?>
+    </div>
   </div>
   
      <div class="clear"></div>

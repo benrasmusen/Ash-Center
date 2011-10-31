@@ -71,12 +71,6 @@
 }
 
 
-
-
-
-/* TOUCAN CSS RESET | v0.1.9 */
-/* Adapted by Aaron James Young */
-
 /* General
 ---------------------------------------- */
 html, body, div, span, object, iframe,
@@ -412,8 +406,20 @@ padding-bottom: 15px;
 margin-bottom: 25px; background:url(../images/dr-border.jpg) left bottom repeat-x;
 }
 
-#wellnest-content .newgallery{ margin-bottom: 30px;
+#wellnest-content .newgallery{ margin-bottom: 30px;}
+.ash-center-list .char-heading{ overflow: hidden; height: 15px; border-bottom: 1px solid #f0f0f0;}
+.ash-center-list .char-heading span{ display: block; float: left; background: #f55d2d; width: 15px; height: 15px; font-size: 12px; color: #ffffff;line-height: 16px;text-align: center;}
+.list-items{
+ float: left;
+ width: 177px;	
+ margin-right: 30px;
 }
+.all-list-items{ overflow: hidden; margin-bottom: 50px;	}
+.list-bottom-items{ margin-bottom: 30px;
+}
+.list-bottom-items, .list-items ul{ list-style: none;}
+.list-bottom-items a, .list-items ul a{ font-size: 12px; font-family:"helvetica-bold"; color: #777; text-decoration: none;}
+.list-bottom-items a:hover, .list-items ul a:hover{ color: #f55d2d;}
 
 /* Sidebar on blog section */
 #sidebar { color:#777777; line-height:1.4em;}
@@ -452,6 +458,7 @@ font-weight:normal; padding-bottom:7px; margin-bottom:13px;}
 .dr-ash #sidebar{ padding-top: 40px;}
 .dr-ash #sidebar h2{ text-transform: uppercase; font-size: 15px; border: none;}
 .dr-ash #sidebar h2 a{ color:#000; text-decoration: none;}
+.dr-ash #sidebar h2 a:hover{ color:#000;}
 .dr-ash #sidebar .widget{ margin-bottom: 18px;
 }
 #wellnest-sidebar .widget, #sidebar .latest-blog, #sidebar .radio-show { padding: 0 0 18px 0; margin: 0 0 10px 0; background:url(../images/dr-border.jpg) left bottom repeat-x;}

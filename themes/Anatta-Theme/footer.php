@@ -1,7 +1,8 @@
-	<footer class="sitefooter">
+<footer class="sitefooter">
 		<div class="body">
         <div class="footer-navigation left">
         <div class="footer-search">
+        <div class="footer-search-form">
        <div id="cse-search-form2">Loading</div>
 <script src="//www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript"> 
@@ -19,7 +20,7 @@
     border:none;
 	padding:5px 10px;
 	border:none;
-	background-image:url(http://ashcenter.wordpressprojects.com/wp-content/themes/Anatta-Theme/images/footer-input-bg.png)!important;
+	background-image:none!important;
 	width:276px!important;
 	height:35px!important;
 	outline:none;
@@ -30,6 +31,11 @@
 	
   }
 </style>
+</div>
+<div class="cnt-detail">
+<small>Contact us</small>
+<big>888.888.8888</big>
+</div>
         </div>
         	<div class="footer-links">
              <dl>
@@ -116,29 +122,26 @@
         </div>
         <div class="footer-networks right">
         	<ul>
-            	<li class="item-1">
-                	<small>Contact us</small>
-                    <big>888.888.8888</big>
-                </li>
                 <a href="http://www.twitter.com/RichardAshMD/" target="_blank"><li class="item-2">#RichardAshMD</li></a>
                 <a href="http://www.facebook.com/DoctorAsh/" target="_blank"><li class="item-3">DoctorAsh</li></a>
                 <a href="<?php bloginfo('url'); ?>/contact/" ><li class="item-4">Dr Ash</li></a>
                 <li class="item-5">
                 <small>Newsletter</small>
                 <?php include_once(TEMPLATEPATH.'/ashmailchimp.php'); //mailchimp code?>
-                <a href="#">Sign Up Now For Appointments  </a>
+                <a href="#" class="singup-appointments">Sign Up Now For Appointments  </a>
                 </li>
             </ul>
         </div>
          <div class="clear"></div>
-         <div class="bottom-nav">
+ 
+        </div>
+        <div class="bottom-nav">
         	<p class="left">
             <a href="#">©<?php the_time('Y');?>. Dr. Ash Center</a>
             </p>
             <p class="right">
             <a href="<?php bloginfo('url');?>/terms-of-use/">Terms of Use</a><span>|</span><a href="<?php bloginfo('url');?>/privacy-policy/">Privacy Policy</a>
             </p>
-        </div>
         </div>
        
 		<!-- <p>
@@ -164,5 +167,6 @@
 	<!-- analytics -->
 	<?php wp_footer(); ?>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/custom.js"></script>
+    </div>
 </body>
 </html>

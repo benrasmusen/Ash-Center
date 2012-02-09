@@ -288,6 +288,7 @@ a { text-decoration:none; }
 .sixth { float: left; width: 132px; margin-right: 24px; }
 .sixth:nth-of-type(6n) { margin-right: 0; }
 .clear{ height:0px; overflow:hidden; clear:both;}
+.separator{background:url(../images/separator.jpg) no-repeat center; height: 12px; margin: 50px 0 30px 0px;}
 
 /* header */
 .body{margin:0px 38px; }
@@ -304,7 +305,7 @@ header #logo{ display:block; width:250px; height:60px; background:url(../images/
 
 /* main navigation */
 .navigation{ list-style:none; height:70px; overflow:hidden;width:670px;
-position:absolute; right:-50px; top:35px;}
+position:absolute; right:-50px; top:18px;}
 .navigation li{ float:left;/*background:url(../images/menu-divider.png) no-repeat center right;*/ padding-right:2px}
 .navigation li a{ display:block; float:left; font-family:'HelveticaBold'; font-size:15px; text-transform:uppercase; color:#c2586d; height:45px; padding:13px 19px;}
 .navigation li a small{ font-size:14px; color
@@ -315,18 +316,22 @@ position:absolute; right:-50px; top:35px;}
 .navigation li.active a small{ color: #000000;}
 .navigation li:last-child{ background:none; padding-right:0px;}
 .navigation li:last-child a{ padding-right:32px;}
-.logo{ margin-top:51px;}
+.logo{ margin-top:30px;}
 
 /* columns */
 .dr-ash, .blog{ padding-top:28px; font-size:12px; overflow: hidden;}
-.blog .left-column{ float:left; width:560px; }
+.blog .left-column{ float:left; width:660px;background: url(../images/dr-border.jpg) right bottom repeat-y; padding-right: 25px; margin-bottom: 25px; }
 .blog .right-column{ float:right; width:295px;}
 .dr-ash{ background:none; color: #666666;}
-.dr-ash .left-column{ width: 600px; float: left;}
-.dr-ash .right-column{ width: 255px; float: right;}
+.dr-ash .left-column{ width: 675px; float: left;}
+.dr-ash .right-column{ width: 290px; float: right; background: url(../images/dr-border.jpg) left bottom repeat-y; padding-left: 35px;
+margin-bottom: 25px;
+}
+
+
 
 /* home page */
-.home-page-slider{ margin-bottom: 50px; position: relative; margin: 0px auto; width: 868px; height: 630px;}
+.home-page-slider{ margin-bottom: 50px; position: relative; margin: 0px auto; width: 868px; height: 465px;}
 .slider-content{  padding-top: 40px; padding-left: 50px;}
 .slider-content h1{ font-family: 'georgiab'; font-size: 38px; color: #000000; font-weight: normal; line-height: 52px; margin-bottom: 25px;}
 .slider-content h1 span{ color: #c2586d;}
@@ -357,12 +362,16 @@ border: 2px solid #6eb624;
 }
 
 /* slider */
-.slider-wrap { width:868px; position: absolute; top: 0px; left: 0px; }			
+.slider-wrap { width:868px; position: absolute; top: -35px; left: 0px; }			
 .stripViewer .panelContainer 
 .panel ul { text-align: left; margin: 0 15px 0 30px; }
-.stripViewer { position: relative; overflow: hidden; width: 868px; height:470px; }
+.stripViewer { position: relative; overflow: hidden; width: 868px; height:400px; }
 .stripViewer .panelContainer { position: relative; left: 0; top: 0; }
 .stripViewer .panelContainer .panel { float: left; height: 100%; position: relative; width: 868px!important; }
+.stripViewer .panelContainer .item-1 img{ margin: 50px 0 0 50px; }
+.stripViewer .panelContainer .item-2 img{ margin: 20px 0 0 20px; }
+.stripViewer .panelContainer .item-3 img{ margin: 45px 0 0 20px; }
+.stripViewer .panelContainer .item-4 img{ margin: 45px 0 0 20px; }
 .stripNavL, .stripNavR, .stripNav { display: none; }
 .nav-thumb { margin-right: 5px; }
 #movers-row { margin-left: 105px; overflow: hidden; }
@@ -412,7 +421,7 @@ margin-bottom: 100px;
 	top: -12px
 }
 
-.block-2{ position: relative; margin-top: 75px;}
+.block-2{ position: relative; margin-top: 40px;}
 .block-2 header big{ height: 25px; text-align: center; display: block; margin-bottom: 20px;  font-family:'Helvetica'; font-size: 14px; color: #000;}
 .block-2 ul{ list-style: none; overflow: hidden; color: #666666; padding-left: 37px;}
 .block-2 ul li{ float: left; width: 260px; position: relative; margin-right: 70px;}
@@ -428,7 +437,7 @@ min-height: 63px;}
 
 .block-2 ul li a{color: #534741; font-size: 14px; font-family:'HelveticaBold'; text-decoration: none;}
 
-.block-3{text-align: center; margin-top: 75px;}
+.block-3{text-align: center; margin-top: 40px;}
 .block-3 a.button{background: #c2586d; border: 2px solid #c2586d; padding-right: 20px; margin: 0px auto;
 width: 106px;float: none;}
 .block-3 a.button:hover{ border: 2px solid #a63f54;}
@@ -436,11 +445,11 @@ width: 106px;float: none;}
 
 
 .block-3 h1{font-weight: normal;font-size: 38px; color: #000;  font-family: 'georgiab'; }
-.block-3  p{ color: gray;font-family: 'Helvetica'; font-size: 15px; line-height: 21px;}
+.block-3 p{ color: gray; font-family: 'Helvetica'; font-size: 15px; line-height: 21px;}
 .block-3 .left{ width: 460px; margin: 10px 0 0 45px;}
 .block-3 .right{ margin: 36px 94px 0 0;}
 .block-3 a.take-me{ float: right; width: 261px; height: 68px; background:url(../images/button-set.png) no-repeat 0 0;}
-.block-4{ margin-top: 65px;}
+.block-4{ margin-top: 40px;}
 .block-4 header h1{}
 .block-4 header big{height: 25px;text-align: center;display: block;
 margin-bottom: 20px;font-family: 'Helvetica';font-size: 14px;color: black;}
@@ -476,7 +485,7 @@ margin: 0!important;
 color: #808080;}
 .dr-ash p{ color: #808080;}
 
-.blog .post{ border-bottom:1px solid #e2dcd6; padding-bottom:30px; margin-bottom:30px;}
+.blog .post{ background: url(../images/dr-border.jpg) right bottom repeat-x; padding-bottom:30px; margin-bottom:30px;}
 .blog header{ position:relative;}
 .blog header h6{ margin-bottom:15px; line-height:normal; color: #87994d;}
 .blog header h6 a{ color: #C2586D;}
@@ -492,14 +501,14 @@ font-weight: normal; margin-bottom: 30px;}
 .blog .dated{ position:absolute; width:92px; left:-115px; top:5px; display: none;
 }
 .blog footer .post-footer-thumb { margin-right:18px;}
-.blog footer .post-footer-content { width:470px;}
+.blog footer .post-footer-content { width:543px;}
 .blog footer .post-footer-share{ border-top:1px dotted #e0e0e0; padding:14px 0 0 0; margin-top:8px;}
 .blog footer .post-footer-share-cat{ border-top:1px dotted #e0e0e0; padding:14px 0 0 0; margin-top:8px;}
 .blog footer .gplus{ width:66px;}
 #blog-inner footer .post-footer-share{ border:0px; border-bottom:1px solid #e2dcd6; padding:14px 0 14px 0; margin-top:8px;}
 
 /* blog inner pages */
-.blog #blog-inner{ width:555px; margin:0px;}
+.blog #blog-inner{ width:666px; margin:0px; margin-bottom: 25px;}
 .blog #blog-inner header h2{color:#000;}
 .blog #blog-inner header#single{ margin-bottom:15px;}
 .blog #blog-inner header#single h2{ margin-bottom:5px;}
@@ -749,7 +758,7 @@ font-family: 'HelveticaBold';}
 #sidebar .forms-widget img{ border: 4px solid #f1f1f1; margin-bottom:13px;}
 #ash-center #sidebar { padding: 0px;}
 #ash-center #sidebar .widget{ margin-bottom: 25px;}
-#ash-center .ash-center-map{border: 5px solid #e3e3e3; width: 435px; height: 365px;
+#ash-center .ash-center-map{border: 5px solid #e3e3e3; width: 465px; height: 365px;
 }
 
 #ash-center .forms-widget p.pdf{
@@ -769,13 +778,13 @@ font-family: 'HelveticaBold';}
 .count-comment a{ color:#000; font-size:12px;}
 
 /* Footer */
-footer.sitefooter{ height:383px;}
+footer.sitefooter{ height:383px; border: 1px solid #dedede;}
 footer.sitefooter a:hover{ color:#000; text-decoration:none;}
 .bottom-nav{ border-top:1px solid #cccbc8; overflow:hidden;}
 .footer-navigation { width:620px;}
 .footer-navigation .footer-links{ padding-top:15px;}
 .footer-navigation div dl{ padding:0; margin:0 0 10px 0; overflow:hidden;  font-size:11px;  }
-.footer-navigation div dl dt{ float:left;width:70px; line-height:20px; color: gray;font-size: 13px;font-family: 'Helvetica'; font-weight: normal;} 
+.footer-navigation div dl dt{ float:left;width:80px; line-height:20px; color: gray;font-size: 13px;font-family: 'HelveticaBold'; font-weight: normal;} 
 .footer-navigation div dl dd{ float:left; width:540px; margin:0px 0 5px 0; line-height:18px;}
 .footer-navigation div dl dd span{ padding:0 5px;}
 .footer-navigation div dl dd span, .footer-navigation div dl dd a{ color:#808080; font-family: 'Helvetica'; font-size: 12px;}
@@ -833,6 +842,8 @@ cursor: pointer;
 float: left;
 border: none;
 margin: 2px 0 0 2px;
+position: relative;
+left: -3px;
 }
 
 /* pagination */

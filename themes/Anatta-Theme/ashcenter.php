@@ -6,25 +6,33 @@ Template Name: Ash Center
 ?>
 <?php get_header(); ?>
 <section class="body dr-ash" id="ash-center">
-
+<?php
+   $pageid =13; //Patient Information Page
+	$page_data = get_page( $pageid );
+	$content = apply_filters('the_content', $page_data->post_content); // Get Content 
+	$title = $page_data->post_title; //get post title
+	echo "<article>";
+	echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
+	echo "<section>".$content."</section></article>"; // Output Content
+?>
 
 	<?php
 	    $pageid = 91; // Photo Gallery Ash Center Page
 		$page_data = get_page( $pageid );
 		$content = apply_filters('the_content', $page_data->post_content); // Get Content and retain Wordpress filters such as paragraph tags. 
-		echo "<article style='float:left;'>";
+		echo "<article class='left'>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?> 
 	<?php
 	    $pageid = 820; // Location Ash Center Page
 		$page_data = get_page( $pageid );
 		$content = apply_filters('the_content', $page_data->post_content); // Get Content and retain Wordpress filters such as paragraph tags. 
-		echo "<article style='float:right;'>";
-		echo "<section>".$content."</section></article>"; // Output Content
+		echo "<article class='right'>";
+		echo "<section><div class='ash-center-map'>".$content."</div></section></article>"; // Output Content
 	 ?>
      <div class="clear"></div>
      <?php
-	    $pageid = 13; //The Ash Center Page
+	    $pageid = 97; //Patient Information Page
 		$page_data = get_page( $pageid );
 		$content = apply_filters('the_content', $page_data->post_content); // Get Content 
 		$title = $page_data->post_title; //get post title
@@ -35,6 +43,15 @@ Template Name: Ash Center
 	 <div class="clear"></div>
 	 
 	 <div class="left-column">
+     <?php
+	    $pageid = 100; //specialities page
+		$page_data = get_page( $pageid );
+		$content = apply_filters('the_content', $page_data->post_content); // Get Content 
+		$title = $page_data->post_title; //get post title
+		echo "<article>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
+		echo "<section>".$content."</section></article>"; // Output Content
+	 ?>
      <?php
 	    $pageid = 195; //Conditions We Treat Page
 		$page_data = get_page( $pageid );
@@ -154,7 +171,7 @@ Template Name: Ash Center
   </div>
   
      <div class="clear"></div>
-        </div>
+    
 	
   <div class="clear"></div>
 </section>

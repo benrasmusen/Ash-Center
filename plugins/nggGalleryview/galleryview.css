@@ -39,22 +39,32 @@
 .gallery { background: #ddd; border: 1px solid #aaa; padding: 5px;}
 
 /* GALLERY PANELS */
-.panel {padding-top: 10px;}
+.panel {padding-top: 10px; width: 600px!important; height: 450px!important;
+}
+#ash-center .panel {padding-top:0px; border: 5px solid #e3e3e3; width: 480px!important; height: 320px!important;
+}
+
+#ash-center .galleryview{
+ height: 407px!important;	
+}
 
 /* DEFINE HEIGHT OF PANEL OVERLAY */
 /* NOTE - It is best to define padding here as well so overlay and background retain identical dimensions */
 .panel .panel-overlay,
-.panel .overlay-background { height: 60px; padding: 0 1em; }
+.panel .overlay-background { height: 60px; padding: 0 1em;  display: none;}
 
 /* PANEL OVERLAY BACKGROUND */
-.panel .overlay-background { background: #222; }
+.panel .overlay-background { background: #222; display: none; }
 
 /* PANEL OVERLAY CONTENT */
 .panel .panel-overlay { color: white; font-size: 0.7em; }
 .panel .panel-overlay a { color: white; text-decoration: underline; font-weight: bold; }
 .panel .panel-overlay h2 { margin:15px 0 0; color: white; }
 
-.galleryview .panel img { width: 450px; height: 400px;}
+.galleryview .panel img { width: 600px; height: 450px;}
+.overlay{ display: none;
+}
+#ash-center .galleryview .panel img { width: 472px; height: 320px;}
 
 /* FILMSTRIP */
 /* 'margin' will define top/bottom margin in completed gallery */
@@ -64,7 +74,10 @@
 
 .filmstrip li:before { content: none !important; }
 
-.filmstrip img {width: 40px; height:  40px;} 
+.filmstrip img {width: 70px; height:  50px;} 
+
+#ash-center .filmstrip img {width: 30px; height:  30px;} 
+
 
 /* FILMSTRIP FRAMES (contains both images and captions) */
 .frame {}
@@ -90,3 +103,21 @@
 /* TRANSPARENT BORDER FIX FOR IE6 */
 /* NOTE - DO NOT CHANGE THIS RULE */
 *html .pointer { filter: chroma(color=pink); }
+
+.strip_wrapper{ width: 552px!important; left: 23px!important; height: 55px!important;
+}
+#ash-center .strip_wrapper{ width:400px!important; left: 35px!important; height: 40px!important; top: 320px!important;}
+.nav-prev{ left: 0!important;
+}
+#ash-center .nav-prev{ left: 10px!important; top: 328px!important;
+}
+
+.nav-next{ right: -148px!important;
+}
+#ash-center .nav-next{ right: -148px!important; top: 328px!important;}
+
+#ash-center .nav-next{ right: -15px!important;
+}
+#pointer{
+	 display: none;
+}

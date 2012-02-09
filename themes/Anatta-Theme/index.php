@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 	<section class="index">
 <!--Homepage slider-->		
-		<div class="body home-page-slider">
+	<div class="body home-page-slider">
 		   <div class="slider-wrap">
 		    <div id="main-photo-slider" class="csw">
 		                        <div class="panelContainer">
-		                                <div class="panel" title="Are you SICK & TIRED of being SICK & TIRED?">
+		                                <div class="panel item-1" title="Are you SICK & TIRED of being SICK & TIRED?">
 		                                        <div class="wrapper">
 		                                        	<div class="left">
 		                                                <a href="<?php bloginfo('url') ?>/ash-center"> <img src="<?php bloginfo('template_url') ?>/images/img-1.jpg" alt=""></a>
@@ -17,7 +17,7 @@
 		                                               </div> 
 		                                        </div>
 		                                </div>
-		                                <div class="panel" title="Are you SICK & TIRED of being SICK & TIRED?">
+		                                <div class="panel item-2" title="EXPERTISE from EXPERIENCE">
 		                                        <div class="wrapper">
 		                                        	<div class="left">
 		                                                <a href="<?php bloginfo('url') ?>/ash-center"> <img src="<?php bloginfo('template_url') ?>/images/img-2.jpg" alt=""></a>
@@ -30,7 +30,7 @@
 		                                        </div>
 		                                </div>
 		                                
-		                                <div class="panel" title="Are you SICK & TIRED of being SICK & TIRED?">
+		                                <div class="panel item-3" title="GET healthy, STAY healthy">
 		                                        <div class="wrapper">
 		                                        	<div class="left">
 		                                                <a href="http://ws1713-1151.staging.nitrosell.com/store/" target="_blank"> <img src="<?php bloginfo('template_url') ?>/images/img-3.jpg" alt=""></a>
@@ -43,7 +43,7 @@
 		                                        </div>
 		                                </div>
 		                                
-		                                <div class="panel" title="Are you SICK & TIRED of being SICK & TIRED?">
+		                                <div class="panel item-4" title="Feel GREAT for LIFE">
 		                                        <div class="wrapper">
 		                                        	<div class="left">
 		                                                <a href="<?php bloginfo('url') ?>/ash-center"> <img src="<?php bloginfo('template_url') ?>/images/img-4.jpg" alt=""></a>
@@ -92,7 +92,8 @@
 			               		                </div>
 <!--/Homepage slider thumbs-->
 	</div>
-</div>	
+</div>
+	<div class="separator"></div>	
 <!--/Homepage slider-->		        
 
 			<!--img src="<?php bloginfo('template_url') ?>/images/home-page-gallery.jpg" alt="" title="" /-->
@@ -111,6 +112,7 @@
 		</div>
 		</section>
 <!--/Block 1-->	
+<div class="separator"></div>
 <!--Block 2-->	
 		<section class="body block-2">
 		<!--Network icons-->			
@@ -148,6 +150,7 @@
 			</ul>
 		</section>
 <!--/Block 2-->	
+<div class="separator"></div>
 <!--Block 3-->	
 		<section class="block-3">
 			<div class="body">
@@ -158,6 +161,7 @@
 		</section>
 		<div class="clear"></div>
 <!--/Block 3-->	
+<div class="separator"></div>
 <!--Block 3-->	
 		<section class="body block-4">
 			<header>
@@ -186,6 +190,7 @@
 			</ul>
 		</section>
 <!--/Block 4-->	
+
 <!--Block 5-->	
 		<section class="block-5"><a class="button" href="<?php bloginfo('url') ?>/testimonials" title="More testimonials">More testimonials</a></section>
 		

@@ -21,6 +21,7 @@
 			 <section class="posts">
 				<?php the_content(); ?>
 			</section>
+            <p class="tag_page"><?php the_tags('<span>Tags:</span> ', ', ', ''); ?></p>
 
         <!--Social sharing buttons code--->
 			<footer> <!-- post metadata -->
@@ -44,7 +45,7 @@
             </div>
             <!--Social sharing buttons code---> 
           </div>
-				<p><?php the_tags('<span>Tags:</span> ', ', ', ''); ?></p>
+				
 				<?php comments_template(); ?>
 			</footer>
 		</article>

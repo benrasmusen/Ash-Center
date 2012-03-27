@@ -26,15 +26,10 @@
 	outline:none;
 	background-repeat:repeat!important;
 	background-color:transparent!important;
-
-
-	
   }
 </style>
 </div>
 <div class="cnt-detail">
-<small>Contact us</small>
-<big>888.888.8888</big>
 </div>
         </div>
         	<div class="footer-links">
@@ -51,49 +46,21 @@
              <dl>
                 <dt>Blog:</dt>
                 <dd>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a>
+					
+					<?php echo str_replace("<br \>"," ",wp_list_categories('style=0&title_li=0')); ?>
+
                 </dd>
              </dl>
               <dl>
                 <dt>Store:</dt>
                 <dd>
-               <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a><span>|</span>
-                <a href="#">link</a>
+               <a href="http://ws1713-1151.staging.nitrosell.com/store/department/4/Ash-Theraputic-Modulator-/">Ash Theraputic Modulator</a><span>|</span>
+                <a href="http://ws1713-1151.staging.nitrosell.com/store/department/2/Books/">Books</a><span>|</span>
+                <a href="http://ws1713-1151.staging.nitrosell.com/store/department/6/Skin-Care/">Skin Care</a><span>|</span>
+                <a href="http://ws1713-1151.staging.nitrosell.com/store/department/13/Solution-Paks./">Solution Paks</a><span>|</span>
+                <a href="http://ws1713-1151.staging.nitrosell.com/store/department/1/Vitamins-%26-Supplements/">Vitamins & Supplements:</a><span>|</span>
+                <a href="http://ws1713-1151.staging.nitrosell.com/store/department/11/WELLNEST/">Wellnest</a><span>|</span>
+
                 </dd>
              </dl>
              <dl>
@@ -122,13 +89,14 @@
         </div>
         <div class="footer-networks right">
         	<ul>
+        		<li class="item-1">212-758-3200</li>
                 <a href="http://www.twitter.com/RichardAshMD/" target="_blank"><li class="item-2">#RichardAshMD</li></a>
                 <a href="http://www.facebook.com/DoctorAsh/" target="_blank"><li class="item-3">DoctorAsh</li></a>
                 <a href="<?php bloginfo('url'); ?>/contact/" ><li class="item-4">Dr Ash</li></a>
                 <li class="item-5">
                 <small>Newsletter</small>
                 <?php include_once(TEMPLATEPATH.'/ashmailchimp.php'); //mailchimp code?>
-                <a href="#" class="singup-appointments">Sign Up Now For Appointments  </a>
+
                 </li>
             </ul>
         </div>
@@ -139,9 +107,7 @@
         	<p class="left">
             <a href="#">©<?php the_time('Y');?>. Dr. Ash Center</a>
             </p>
-            <p class="right">
-            <a href="<?php bloginfo('url');?>/terms-of-use/">Terms of Use</a><span>|</span><a href="<?php bloginfo('url');?>/privacy-policy/">Privacy Policy</a>
-            </p>
+           
         </div>
        
 		<!-- <p>

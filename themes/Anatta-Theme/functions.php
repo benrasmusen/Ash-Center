@@ -201,8 +201,8 @@
 
     // The height and width of your custom header. You can hook into the theme's own filters to change these values.
     // Add a filter to yourtheme_header_image_width and yourtheme_header_image_height to change these values.
-    define( 'HEADER_IMAGE_WIDTH', apply_filters( 'yourtheme_header_image_width', 250 ) );
-    define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'yourtheme_header_image_height', 60 ) );
+    define( 'HEADER_IMAGE_WIDTH', apply_filters( 'yourtheme_header_image_width', 306 ) );
+    define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'yourtheme_header_image_height', 44 ) );
 
     // We'll be using post thumbnails for custom header images on posts and pages.
     // We want them to be 940 pixels wide by 198 pixels tall (larger images will be auto-cropped to fit).
@@ -287,12 +287,13 @@
     endif;
 
 //function for getting first post image	
- function catch_that_image() {
+ function catch_that_image($cont) {
+
   global $post, $posts;
   $first_img = '';
   ob_start();
   ob_end_clean();
-  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $cont, $matches);
   $first_img = $matches [1] [0];
 
   if(empty($first_img)){ //Defines a default image

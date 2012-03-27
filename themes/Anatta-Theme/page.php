@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<section class="body blog">
-      		<div id="blog-inner" class="left-column">	
-            <header>
+      <div id="blog-inner" class="left-column">	
+      <header>
      <?php 
 	 $url = explode('/',$_SERVER['REQUEST_URI']);
 			$req_url = $url[1];
@@ -18,27 +18,33 @@
 	 $pages = get_pages('child_of=26&sort_column=post_date&sort_order=asc&parent=26'); //showing subpages of testimonials page?>
 	 <h2>Testimonials</h2>
 	<?php  }
-	 
-	 
 	 if((($req_url == 'trainer-listing' ) && ($req_url2 == '' )) || (($req_url == 'event-listing' ) && ($req_url2 == '' )) || (($req_url == 'testimonials' ) && ($req_url2 == '' ))) { //for showing trainer listing , Event listing, testimonial page contents
 	foreach($pages as $page) {
 		
 		?>
         </header>
+        <header><h6><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a></h6></header>
+        <section class="posts">
 			<div class="section" id="<?php echo $page->post_name; ?>">
-				<h2><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a></h2>
+			<article class="post" id="auto-image">
 				 <?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?><?php echo apply_filters('the_excerpt', $page->post_excerpt); ?>
+			</article>
 			</div>
-	
+		</section>
 		<?php } ?>	
      
      <?php } else { //showing all other pages ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<?php if ($req_url == 'testimonials' || $req_url == 'trainer-listing' || $req_url == 'event-listing' ) { ?>
+		<header>
+			<h6><?php the_title(); ?></h6>
+		</header>
+		<?php } else { // title for inner page of testimonials  ?>
 			<header>
 				<h2><?php the_title(); ?></h2>
-				
 			</header>
+		<? } ?>	
 			<section class="posts">
 				<?php the_content(); ?>
 			</section>

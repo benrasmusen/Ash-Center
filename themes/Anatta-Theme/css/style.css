@@ -333,7 +333,7 @@ margin-bottom: 25px;
 /* home page */
 .home-page-slider{ margin-bottom: 50px; position: relative; margin: 0px auto; width: 868px; height: 465px;}
 .slider-content{  padding-top: 40px; padding-left: 50px;}
-.slider-content h1{ font-family: 'georgiab'; font-size: 38px; color: #000000; font-weight: normal; line-height: 52px; margin-bottom: 25px;}
+.slider-content h1{ font-family: 'georgiab'; font-size: 34px; color: #000000; font-weight: normal; line-height: 52px; margin-bottom: 25px;}
 .slider-content h1 span{ color: #c2586d;}
 .slider-content p{ font-family:'Helvetica'; color: #808080; font-size: 15px; margin-bottom: 20px;} 
 a.button{ display: block;  height: 32px; line-height: 34px; color: #ffffff; font-family:'Helvetica';
@@ -348,7 +348,8 @@ a.button:hover{
 border: 2px solid #6eb624;
 }
 .home-page-slider .slide-1{
-	width: 650px;
+	width: 480px;
+	padding-left: 20px;
 }
 .home-page-slider .slide-2{
 	width: 485px;
@@ -368,7 +369,7 @@ border: 2px solid #6eb624;
 .stripViewer { position: relative; overflow: hidden; width: 868px; height:400px; }
 .stripViewer .panelContainer { position: relative; left: 0; top: 0; }
 .stripViewer .panelContainer .panel { float: left; height: 100%; position: relative; width: 868px!important; }
-.stripViewer .panelContainer .item-1 img{ margin: 50px 0 0 50px; }
+.stripViewer .panelContainer .item-1 img{ margin: 50px 0 0 0px; }
 .stripViewer .panelContainer .item-2 img{ margin: 20px 0 0 20px; }
 .stripViewer .panelContainer .item-3 img{ margin: 45px 0 0 20px; }
 .stripViewer .panelContainer .item-4 img{ margin: 45px 0 0 20px; }
@@ -456,15 +457,20 @@ margin-bottom: 20px;font-family: 'Helvetica';font-size: 14px;color: black;}
 .block-4 ul{ list-style: none; overflow: hidden;padding-left: 60px;}
 .block-4 ul li{ width: 250px; float: left; color: #333333; margin-right: 65px; }
 .block-4 ul li.last-item{ margin-right:0px}
-.block-4 ul li p{ font-size: 15px; padding: 15px 50px 12px 0 ; line-height: 19px; margin: 0px; color: #808080;
-font-family: 'Helvetica'; font-style: italic;}
+.block-4 ul li p{ font-size: 14px; padding: 15px 0px 12px 0 ; line-height: 19px; margin: 0px; color: #808080;
+font-family: 'Helvetica';}
 .block-4 ul li img{width: 250px;}
 .block-4 ul li big{ color: #534741; font-size: 14px; font-family: 'HelveticaBold'; display: block;}
 .block-4 ul li small{ color: #808080; font-size: 13px; font-family: 'Helvetica'; line-height: normal; display: block;}
 .block-5{ width: 800px; margin: 0px auto; position: relative; height: 110px; margin-top: 20px;}
 .block-5 a.button{ width: 165px;margin: 0px auto;float: none;}
-
-
+a.play-video{position: absolute; top: 100px; height: 37px; display: block; left: 5px;
+}
+.block-4 ul li{
+	position: relative;}
+.block-4 ul li a.play-video img{
+	width: auto;
+}
 
 /* network icons  */
 .networks{ list-style:none; width: 120px; margin: 16px auto 50px auto; overflow: hidden; position: absolute; right: 28px;}
@@ -789,6 +795,8 @@ footer.sitefooter a:hover{ color:#000; text-decoration:none;}
 .footer-navigation div dl dd span{ padding:0 5px;}
 .footer-navigation div dl dd span, .footer-navigation div dl dd a{ color:#808080; font-family: 'Helvetica'; font-size: 12px;}
 
+.footer-navigation div dl dd br{ display: none;}
+
 .footer-networks { width:221px; height:333px; font-family: 'Helvetica';}
 .footer-networks a{ text-decoration:none; color:#808080;}
 .footer-networks a:hover{ text-decoration:none;}
@@ -796,7 +804,8 @@ footer.sitefooter a:hover{ color:#000; text-decoration:none;}
 .footer-networks ul{ list-style:none; width:220px; margin:0px auto; margin-top:42px;}
 .footer-networks ul li{ color:#808080; font-size:12px; text-align:right; font-family: 'Helvetica';} 
 .footer-networks ul li small{ font-size:14px;}
-.footer-networks ul li.item-1{ height:50px;} 
+.footer-networks ul li.item-1{ height:39px; background:url(../images/icons2.png) no-repeat right -130px;padding: 10px 40px 10px 0px;
+} 
 .footer-networks ul li.item-2 {background:url(../images/icons2.png) no-repeat right 7px;}
 .footer-networks ul li.item-3 {background:url(../images/icons2.png) no-repeat right -34px;}
 .footer-networks ul li.item-4 {background:url(../images/icons2.png) no-repeat right -80px;}

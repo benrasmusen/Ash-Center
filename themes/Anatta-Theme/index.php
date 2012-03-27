@@ -33,7 +33,7 @@
 		                                <div class="panel item-3" title="GET healthy, STAY healthy">
 		                                        <div class="wrapper">
 		                                        	<div class="left">
-		                                                <a href="http://ws1713-1151.staging.nitrosell.com/store/" target="_blank"> <img src="<?php bloginfo('template_url') ?>/images/img-3.jpg" alt=""></a>
+		                                                <a href="http://ws1713-1151.staging.nitrosell.com/store/" target="_blank"> <img src="<?php bloginfo('template_url') ?>/images/img-new.jpg" alt=""></a>
 		                                               </div>
 		                                               <div class="left slider-content slide-3">
 		                                               <h1>GET healthy, STAY healthy</h1>
@@ -77,14 +77,14 @@
 			                </div>
 			                <div>
 			                    <a href="#3" class="cross-link"> 
-			                    <img class="nav-thumb" src="<?php bloginfo('template_url') ?>/images/banner-3-thumb.jpg" alt="temp">
+			                    <img class="nav-thumb" src="<?php bloginfo('template_url') ?>/images/banner-3-new.jpg" alt="temp">
 			                     <span></span>
 			                    </a>
 			                   
 			                </div>
 			                <div>
 			                    <a href="#4" class="cross-link"> 
-			                    <img class="nav-thumb" src="<?php bloginfo('template_url') ?>/images/banner-4-thumb.jpg" alt="temp">
+			                    <img class="nav-thumb" src="<?php bloginfo('template_url') ?>/images/banner-3-thumb.jpg" alt="temp">
 			                     <span></span>
 			                    </a>
 			                   
@@ -168,24 +168,22 @@
 				<h1>They got better - and so can you</h1>
 				<big>Testimonials from patient who have experienced Dr Ash's program.</big>
 			</header>
-			<ul>
+			<ul class="gallery-videos">
 				<li>
-					<img src="<?php bloginfo('template_url') ?>/images/friend-1.jpg" alt="" title="" />
-					<p>Thanks to Dr. Ash, I now lead a pain-free life. His regimen worked for my multiple health problems and most certainly his treatment program for IBS can help others – no matter how serious their symptoms.</p>
-					<big>Judy Collins </big>
-					<small>Singer/songwriter and author of Sanity and Grace</small>
+					<a href="http://www.youtube.com/watch?v=-jWv6g6PvRI&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
+					<a href="http://www.youtube.com/watch?v=-jWv6g6PvRI&feature=youtu.be" rel="prettyPhoto" ><img src="<?php bloginfo('template_url') ?>/images/video-1.jpg" alt="" title="" /></a>
+					<p>Competitive cyclist with back pain – RT therapy cured that, plus improved performance due to Nutritious Delicious and Pure Essentials vitamins.</p>
 				</li>
 				<li>
-					<img src="<?php bloginfo('template_url') ?>/images/friend-2.jpg" alt="" title="" />
-					<p>I wholeheartedly endorse Dr. Ash’s natural, commonsense approach to the pervasive problems of IBS.</p>
-					<big>Dr. Ronald Hoffman, M.D.</big>
-					<small>Author of Seven Weeks to a Settled Stomach and past president, The American College for the Advancement of Medicine (ACAM)</small>
+					<a href="http://www.youtube.com/watch?v=j1-B21Mi76w&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
+					<a href="http://www.youtube.com/watch?v=j1-B21Mi76w&feature=youtu.be" rel="prettyPhoto"><img src="<?php bloginfo('template_url') ?>/images/video-2.jpg" alt="" title="" /></a>
+					<p>This young woman’s son suffered from asthma for 11 years, and was constantly in pain and in and out of hospitals. He took Dr Ash’s Pure Essentials and made some small dietary changes, and in just 16 days was significantly better.</p>
+
 				</li>
 				<li class="last-item">
-					<img src="<?php bloginfo('template_url') ?>/images/friend-3.jpg" alt="" title="" />
-					<p>Using his own experience as a guideline, Dr. Ash has developed a drug-free program using natural remedies. His advice, I can assure you, makes all the difference in the world. It works.</p>
-					<big>Jason Binn</big>
-					<small>Publisher of Gotham, Hamptons, and LA Confidential magazines</small>
+					<a href="http://www.youtube.com/watch?v=yURchrYo-YU&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
+					<a href="http://www.youtube.com/watch?v=yURchrYo-YU&feature=youtu.be" rel="prettyPhoto" ><img src="<?php bloginfo('template_url') ?>/images/video-3.jpg" alt="" title="" /></a>
+					<p>This older woman had uncontrollable diarrhea for 20 years, but showed up fine on standard medical examinations. No one could find out what the problem was. Dr Ash put her on Pure Essentials and within 2 weeks she was improved.</p>
 				</li>
 			</ul>
 		</section>

@@ -5,8 +5,8 @@ Template Name: Dr Ash
 */
 ?>
 <?php get_header(); ?>
-<section class="body blog">
-<div class="" style="float:left; width:600px;">
+<section class="body dr-ash">
+<div class="left-column">
 
 <?php query_posts('p=36'); //Tracy Anderson Post ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -27,7 +27,7 @@ Template Name: Dr Ash
 		$link = $page_data->post_name; // Get post name
 		$title = $page_data->post_title; //get post title
 		echo "<article>";
-		echo "<h3>".strtoupper($title)."</h3>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
      
@@ -38,7 +38,7 @@ Template Name: Dr Ash
 		$link = $page_data->post_name; // Get post name
 		$title = $page_data->post_title; //get post title
 		echo "<article>";
-		echo "<h3>".strtoupper($title)."</h3>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
      
@@ -49,14 +49,16 @@ Template Name: Dr Ash
 		$link = $page_data->post_name; // Get post name
 		$title = $page_data->post_title; //get post title
 		echo "<article>";
-		echo "<h3>".strtoupper($title)."</h3>";
+		echo "<h3 class='content-heading'>".strtoupper($title)."</h3>";
 		echo "<section>".$content."</section></article>"; // Output Content
 	 ?>
      <div class="clear"></div>
-        </div>
+ </div>
 	<div class="right-column">
-    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('ash-page-sidebar') ) : else : // Sidebar for Dr. Ash ?>
-    <?php endif; ?>
+		<div id="sidebar">
+	    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('ash-page-sidebar') ) : else : // Sidebar for Dr. Ash ?>
+	    <?php endif; ?>
+	    </div>
   </div>
   <div class="clear"></div>
 </section>

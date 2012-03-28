@@ -302,6 +302,7 @@ header #logo{ display:block; width:250px; height:60px; background:url(../images/
 .page-header{ height:48px; background:#534741; color:#fff; margin-top:1px; font-size:17px; margin: 35px 0 0 0;
 }
 .page-header .body{line-height:45px;}
+.page-header .body small{ font-size: 12px; font-style: italic;}
 .page-header a{ color: #fff;}
 .index{ margin: 35px 0 0 0;}
 /* main navigation */
@@ -551,7 +552,7 @@ font-weight: normal; margin-bottom: 30px;}
 .dr-ash section h2, .blog .posts h2{ font-size:26px; line-height:26px;}
 .dr-ash section h3, .blog .posts h3{ font-size:24px; line-height:24px;}
 .dr-ash section h4, .blog .posts h4{ font-size:22px; line-height:22px;}
-.dr-ash section h5, .blog .posts h5{ font-size:20px; line-height:20px;}
+.dr-ash section h5, .blog .posts h5{ font-size:19px; line-height:22px;}
 .dr-ash section h6, .blog .posts h6{ font-size:14px; line-height:14px;}
 
 /* media */
@@ -900,7 +901,7 @@ margin: 0px 0 30px 0px;
 .bottom-column{
 	margin-bottom: 100px;
 }
-.bottom-column article {
+/*.bottom-column article {
 float: left;
 width: 308px;
 margin-left: 20px;
@@ -913,7 +914,7 @@ padding-right: 10px;
 	text-decoration:none;
 	margin: 10px 0;
 	
-}
+}*/
 /* pagination */
 .wp-pagenavi {
 	clear: both;
@@ -1107,10 +1108,32 @@ input.gsc-search-button{ margin:0px!important; text-indent:-9999px!important;}
 
 
 .ash-center-bottom { border-top: 1px solid #ccc; overflow: hidden; padding: 30px 0px; margin-bottom: 20px;}
-.ash-center-bottom img{ float: left; margin-right: 50px;border: 3px solid #ccc;}
+.ash-center-bottom img{ float: left; margin-right: 50px;border: 3px solid #ccc; margin-bottom: 20px;
+}
 
 #first-section{ border: 0px;}
 
+.page-nav { list-style: none; float: right; width: 800px;}
+.page-nav li{float: left; font-size: 12px;position: relative; cursor: pointer; padding:15px 13px;}
+.page-nav li:hover{
+	color: #000;
+	}
+.page-nav span{
+	float: left;
+	color: #352d28; margin-top: 15px; 
+}
+
+.page-nav ul.child{ display: none; width: 200px; position: absolute; left: 0; top: 48px;}
+.page-nav ul.child li{ float: none; border: none;
+ background: #534741; padding:5px 10px;}
+ .page-nav li:hover ul{ color: #fff;}
+  .page-nav li:hover ul li:hover{
+  	text-decoration: underline;
+  	color: #fff;
+  }
+#w-page{
+	width: 351px;
+}
 /* 768px width */
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 	.body { padding: 0 24px; width: 768px; margin: 0 auto; }

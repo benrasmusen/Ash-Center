@@ -130,8 +130,9 @@
 				<li>
 					<img src="<?php bloginfo('template_url') ?>/images/radio-show-home-img.jpg" alt="" title="" />
 					<h2>RADIO SHOW</h2>
-					<big>“In the Doctor’s Office” with Dr Richard Ash</big>
-					<a href="<?php bloginfo('url') ?>/radio-show/">Tune in now ></a>
+					<big>“In the Doctor’s Office”</big>
+					<a href="http://www.wor710.com/pages/7049861.php" target="_blank">Listen Live - WOR 710AM Sundays 5-7pm ></a>
+					<a href="<?php bloginfo('url') ?>/radio-show/">Click Here to access archived past shows></a>
 				</li>
 				<li>
 					<img src="<?php bloginfo('template_url') ?>/images/edu-the-world-home-img.jpg" alt="" title="" />

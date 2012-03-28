@@ -91,7 +91,7 @@
         	<ul>
         		<li class="item-1">212-758-3200</li>
                 <a href="http://www.twitter.com/RichardAshMD/" target="_blank"><li class="item-2">#RichardAshMD</li></a>
-                <a href="http://www.facebook.com/DoctorAsh/" target="_blank"><li class="item-3">DoctorAsh</li></a>
+                <a href="http://www.facebook.com/pages/Richard-N-Ash-MD/113457665369741" target="_blank"><li class="item-3">DoctorAsh</li></a>
                 <a href="<?php bloginfo('url'); ?>/contact/" ><li class="item-4">Dr Ash</li></a>
                 <li class="item-5">
                 <small>Newsletter</small>

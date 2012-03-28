@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 	<section class="body blog">
+	<?php if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+	} ?>
       <div id="blog-inner" class="left-column">	
       <header>
      <?php 
@@ -63,7 +66,7 @@
 	        </div>
             <div class="right-column">
         <div id="sidebar">
-    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('page-sidebar') ) : else : // Sidebar for wp pages ?>
+    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('blog-sidebar') ) : else : // Sidebar for wp pages ?>
     <?php endif; ?>
   </div>
         </div>

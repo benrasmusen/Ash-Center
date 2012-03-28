@@ -492,7 +492,7 @@ margin: 0!important;
 .blog .posts img{ width:550px!important; height:auto!important; margin-bottom:15px;}
 .dr-ash p, .blog p{ color:#434343; font-size:14px; margin-bottom:15px; line-height:20px; font-family: 'Helvetica';
 color: #808080;}
-.dr-ash p{ color: #808080;}
+.dr-ash p{ color: #000000;}
 
 .blog .post{ background: url(../images/dr-border.jpg) right bottom repeat-x; padding-bottom:30px; margin-bottom:30px;}
 .blog header{ position:relative;}
@@ -542,9 +542,10 @@ font-weight: normal; margin-bottom: 30px;}
 .dr-ash section h5, .blog .posts h5,
 .dr-ash section h6, .blog .posts h6{
 	font-weight:normal;
-	color:#534741;
+	color:#000000;
 	margin-bottom:15px;
-	 font-family:"HelveticaLight";
+	 font-family:"Helvetica";
+	text-transform: uppercase;
 	}
 
 /* headings */
@@ -588,7 +589,7 @@ margin-bottom: 20px;
 font-weight: normal; 
 }
 .dr-ash article h3.content-heading{ color: #000;
-font-family: 'georgiab';
+font-family: 'Helvetica';
 font-weight: normal;
 font-size: 18px;
 font-weight: normal;
@@ -671,7 +672,7 @@ display: block; line-height: 20px; font-weight: bold;}
 #sidebar p{ color:#808080;}
 #sidebar .widget a:hover{color:#c2586d; text-decoration:none;}
 #sidebar h3, #sidebar h2{color: #000; text-transform: uppercase;
-font-family: 'georgiab';
+font-family: 'Helvetica';
 font-weight: normal;
 font-size: 18px;
 font-weight:normal; padding-bottom:7px; margin-bottom:13px;}

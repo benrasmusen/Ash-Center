@@ -66,8 +66,89 @@
 	</script>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
-			$(".gallery-videos a[rel^='prettyPhoto']").prettyPhoto();
-	
+		$(".gallery-videos a[rel^='prettyPhoto']").prettyPhoto();
+		$(".submenu").hover(
+			function () {
+			$('.child').slideDown("fast");
+			},
+			function () {
+			$('.child').fadeOut("fast");
+			}
+		);
+		$('.item-1').click(function(){
+			$('html, body').animate({
+			scrollTop: $('#item-1').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.item-2').click(function(){
+			$('html, body').animate({
+			scrollTop: $('#item-2').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.item-3').click(function(){
+			$('html, body').animate({
+			scrollTop: $('#item-3').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.item-4').click(function(){
+		$('html, body').animate({
+			scrollTop: $('#item-4').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.item-5').click(function(){
+			$('html, body').animate({
+			scrollTop: $('#item-5').offset().top
+			}, 1500);
+			return false;
+		});
+		
+		$('.item-6').click(function(){
+			$('html, body').animate({
+				scrollTop: $('.id-item-6').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.item-7').click(function(){
+			$('html, body').animate({
+			scrollTop: $('#item-7').offset().top
+			}, 1500);
+			return false;
+		});
+		
+		$('.item-8').click(function(){
+			$('html, body').animate({
+			scrollTop: $('.gallery-map').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.item-9').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#item-9').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.w-item-1').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#schedule').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.w-item-2').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#event').offset().top
+			}, 1500);
+			return false;
+		});
+		$('.w-item-3').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#about').offset().top
+			}, 1500);
+			return false;
+		});							
 		});
 	</script>
 	
@@ -86,17 +167,10 @@
 		<script type="text/javascript">
             new HelloBar(21651,39730);
         </script>
-
 		  <!--Hellobar Code-->
-          
           <!--Custom Header Code-->
-       
-		
 		<a href="<?php bloginfo('url');?>"><img class="logo" src="<?php header_image(); ?>" width="306px" height="44px"  alt="" /></a>
-		
          <!--Custom Header Code ends here-->
-         
-  
         <menu class="navigation">
         <?php 
 			$url = explode('/',$_SERVER['REQUEST_URI']);
@@ -128,11 +202,37 @@
 	if($req_url == 'dr-ash' || $req_url =='testimonials'  || $req_url == 'photo-gallery-3' || $req_url == 'story' || $req_url == 'radio-show') { ?>
 	<div class="page-header"><div class="body">Dr Ash – unique expertise and solutions through personal experience</div></div>
 	<?php } if($req_url == 'wellnest' || $req_url == 'location'  || $req_url == 'about' || $req_url == 'photo-gallery-2' ) {?>
-	<div class="page-header"><div class="body">WellNest</div></div>
+	<div class="page-header"><div class="body left">WellNest |<small>   "WellNest reopens on May 1st. New products, new classes, and new decor!"</small></div>
+	
+	<ul class="page-nav" id="w-page">
+		<li class="w-item-1">Class Schedule</li><span>|</span>
+		<li class="w-item-2">Events</li><span>|</span>
+		<li class="w-item-3">About</li><span>|</span>
+		<li class="w-item-4">Videos</li>
+	</ul>
+	
+	</div>
    <?php } if($req_url == 'trainer-listing' ) {?>
 	<div class="page-header"><div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Trainer</div> </div>
  <?php } if($req_url == 'event-listing' ) {?>
 	<div class="page-header"> <div class="body"><a href="<?php bloginfo('url'); ?>/wellnest/">WellNest</a> - Event</div></div>
    <?php } if($req_url == 'ash-center' || $req_url == 'photo-gallery-1' || $req_url == 'patient-information' || $req_url == 'treatment-options' || $req_url == 'specialities' || $req_url =='location-ash-center') {?>
-	<div class="page-header"> <div class="body">The Ash Center – information, specialties & treatments</div></div>
+	<div class="page-header"> <div class="body left">The Ash Center</div>
+	<ul class="page-nav">
+		<li>Healing Approach</li><span>|</span>
+		<li class="submenu">What's Making You Sick & Tired
+			<ul class="child">
+				<li class="item-1">Environment</li>
+				<li class="item-2">Food & Chemical Sensitivity</li>
+				<li class="item-3">Digestion & Absorption</li>
+				<li class="item-4">Stress</li>
+				<li class="item-5">Acid-Alkaline Balance</li>
+			</ul>
+		</li><span>|</span>
+		<li class="item-6">Specialties</li><span>|</span>
+		<li class="item-7">Unique Treatments</li><span>|</span>
+		<li class="item-8">Location</li><span>|</span>
+		<li class="item-9">Patient Information</li>
+	</ul>
+	</div>
    <?php } ?>	

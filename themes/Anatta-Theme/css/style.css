@@ -491,7 +491,7 @@ margin: 0!important;
 /* blog section */
 .blog .posts img{ width:550px!important; height:auto!important; margin-bottom:15px;}
 .dr-ash p, .blog p{ color:#434343; font-size:14px; margin-bottom:15px; line-height:20px; font-family: 'Helvetica';
-color: #808080;}
+color: #000000;}
 .dr-ash p{ color: #000000;}
 
 .blog .post{ background: url(../images/dr-border.jpg) right bottom repeat-x; padding-bottom:30px; margin-bottom:30px;}
@@ -502,7 +502,7 @@ color: #808080;}
 
 .blog .post-footer-content a{ color: #534741;font-size: 13px;font-family: 'HelveticaBold'; }
 .blog a:hover { text-decoration:underline;}
-.blog header h2{font-family: 'georgiab';
+.blog header h2{font-family: 'Helvetica';
 font-size: 30px;
 color: black;
 font-weight: normal; margin-bottom: 30px;}

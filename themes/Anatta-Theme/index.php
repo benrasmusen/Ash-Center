@@ -100,6 +100,19 @@
 		
 <!--Block 1-->			
 		<section class="block-1">
+			<div class="small-btns">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_3"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f7560720d5d35e0"></script>
+				<!-- AddThis Button END -->			
+			</div>
 		<div class="body">
 			<img src="<?php bloginfo('template_url') ?>/images/real-cure-img.jpg" alt="" title="" />
 			<div class="content">
@@ -171,19 +184,19 @@
 			</header>
 			<ul class="gallery-videos">
 				<li>
-					<a href="http://www.youtube.com/watch?v=-jWv6g6PvRI&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
-					<a href="http://www.youtube.com/watch?v=-jWv6g6PvRI&feature=youtu.be" rel="prettyPhoto" ><img src="<?php bloginfo('template_url') ?>/images/video-1.jpg" alt="" title="" /></a>
+					<a href="http://www.youtube.com/watch?v=vtXyEKd_x_0&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
+					<a href="http://www.youtube.com/watch?v=vtXyEKd_x_0&feature=youtu.be" rel="prettyPhoto" ><img src="<?php bloginfo('template_url') ?>/images/video-1.jpg" alt="" title="" /></a>
 					<p>Competitive cyclist with back pain – RT therapy cured that, plus improved performance due to Nutritious Delicious and Pure Essentials vitamins.</p>
 				</li>
 				<li>
-					<a href="http://www.youtube.com/watch?v=j1-B21Mi76w&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
-					<a href="http://www.youtube.com/watch?v=j1-B21Mi76w&feature=youtu.be" rel="prettyPhoto"><img src="<?php bloginfo('template_url') ?>/images/video-2.jpg" alt="" title="" /></a>
+					<a href="http://www.youtube.com/watch?v=DaGmIM4INTQ&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
+					<a href="http://www.youtube.com/watch?v=DaGmIM4INTQ&feature=youtu.be" rel="prettyPhoto"><img src="<?php bloginfo('template_url') ?>/images/video-2.jpg" alt="" title="" /></a>
 					<p>This young woman’s son suffered from asthma for 11 years, and was constantly in pain and in and out of hospitals. He took Dr Ash’s Pure Essentials and made some small dietary changes, and in just 16 days was significantly better.</p>
 
 				</li>
 				<li class="last-item">
-					<a href="http://www.youtube.com/watch?v=yURchrYo-YU&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
-					<a href="http://www.youtube.com/watch?v=yURchrYo-YU&feature=youtu.be" rel="prettyPhoto" ><img src="<?php bloginfo('template_url') ?>/images/video-3.jpg" alt="" title="" /></a>
+					<a href="http://www.youtube.com/watch?v=gLeknZEiNds&feature=youtu.be" rel="prettyPhoto" class="play-video"><img src="<?php bloginfo('template_url') ?>/images/play-video.png" alt="" /></a>
+					<a href="http://www.youtube.com/watch?v=gLeknZEiNds&feature=youtu.be" rel="prettyPhoto" ><img src="<?php bloginfo('template_url') ?>/images/video-3.jpg" alt="" title="" /></a>
 					<p>This older woman had uncontrollable diarrhea for 20 years, but showed up fine on standard medical examinations. No one could find out what the problem was. Dr Ash put her on Pure Essentials and within 2 weeks she was improved.</p>
 				</li>
 			</ul>

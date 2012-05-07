@@ -12,7 +12,7 @@
 @font-face {
 	font-family: 'futura medium';
 	src: url('../fonts/ftramd.eot');
-	src: local('☺'), url('../fonts/ftramd.woff') format('woff'), url('../fonts/ftramd.ttf') format('truetype'), url('../fonts/ftramd.svg') format('svg');
+	src: local('☺'), url('../fonts/ftramd.woff') format('woff'), url('../fonts/ftramd.ttf') format('truetype'), url(/'../fonts/ftramd.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -105,7 +105,7 @@
 
 @font-face {
 	font-family: 'BELL';
-	src: url('fonts/BELL.eot');
+	src: url('../fonts/BELL.eot');
 	src: local('☺'), url('../fonts/BELL.woff') format('woff'), url('../fonts/BELL.ttf') format('truetype'), url('../fonts/BELL.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -308,7 +308,7 @@ header #logo{ display:block; width:250px; height:60px; background:url(../images/
 /* main navigation */
 .navigation{ list-style:none; height:70px; overflow:hidden;width:670px;
 position:absolute; right:-50px; top:18px;}
-.navigation li{ float:left;/*background:url(../images/menu-divider.png) no-repeat center right;*/ padding-right:2px}
+.navigation li{ float:left;/*background:url(../images/../images/menu-divider.png) no-repeat center right;*/ padding-right:2px}
 .navigation li a{ display:block; float:left; font-family:'HelveticaBold'; font-size:15px; text-transform:uppercase; color:#c2586d; height:45px; padding:13px 19px;}
 .navigation li a small{ font-size:14px; color
 :#808080; text-transform:none; display:block; line-height:17px; font-weight: normal!important; font-family:'Helvetica'}
@@ -381,7 +381,7 @@ border: 2px solid #6eb624;
 #movers-row { margin-left: 105px; overflow: hidden; }
 #movers-row div { width: 162px; float: left; margin-right: 5px; overflow: hidden; }
 #movers-row div a.cross-link { float: right; }
-.photo-meta-data { background: url(images/transpBlack.png); padding: 10px; height: 30px; margin-top: -50px; position: relative; z-index: 100; color: white; }
+.photo-meta-data { background: url(../images/transpBlack.png); padding: 10px; height: 30px; margin-top: -50px; position: relative; z-index: 100; color: white; }
 .photo-meta-data span { font-size: 13px; }
 .cross-link { display: block; width: 162px;}
 .slider-wrap a span{ display: none; position: absolute; width:162px ; height: 15px; background:#8bd73d;bottom: 5px;}
@@ -618,9 +618,129 @@ margin-bottom: 20px;
 #wellnest-content .trainers-list li{ float: left; width: 160px;}
 #wellnest-content .trainers-list li{ float: left; width: 160px;}
 
-#wellnest-content .upcoming-class-schedule{
+#wellnest-sidebar, #wellnest-content .upcoming-class-schedule{
+	padding-bottom: 15px; 
+	margin-bottom: 25px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+#wellnest-content #locations img, #wellnest-content #about img, #wellnest-content #event img{
+	float: left;
+	margin-right: 20px;
+	border: 5px solid #F1F1F1;
+
+}
+#wellnest-content #locations img, #wellnest-content #about img{
+	max-width: 500px;
+	height: auto;
+}
+
+#wellnest-content #event div{
+	float: left;
+	width: 480px;
+}
+#wellnest-content #video{
+	padding: 0;
+	margin: 0;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+#wellnest-content #video h3.content-heading{
+	color: black;
+	font-family: 'Helvetica';
+	font-weight: normal;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 15px;	
+}
+
+#wellnest-content #video ul li{
+	padding: 0px;
+	background: none;
+}
+
+#wellnest-content #video ul li p{
+	color: #000000;
+}
+
+#wellnest-content #locations, #wellnest-content #about{
+	overflow: hidden;
+}
+
+#wellnest-content #locations .wellnest-map{
+	border: 5px solid #F1F1F1;
+	    float: left;
+	    height: 280px;
+	    width: 600px;
+}
+
+#wellnest-content #locations .wellnest-add{
+	width: 350px;
+	float: left;
+	margin-left: 20px;
+
+}
+
+#wellnest-content #wellnest-sidebar h3{
+	color: #000000;
+	font-family: 'Helvetica';
+	font-size: 18px;
+	font-weight: normal;
+	
+}
+
+#wellnest-content #wellnest-sidebar #sidebar .widget h4, #wellnest-content #wellnest-sidebar h2{
+	font-family: 'Helvetica';
+	    font-size: 14px;
+	    line-height: 20px;
+	    font-weight: bold;
+	    text-transform: lowercase;
+	    margin-top: 15px;
+}
+
+#wellnest-content #wellnest-sidebar #sidebar{
+	overflow: hidden;
+}
+
+#wellnest-content #wellnest-sidebar #sidebar .widget{
+	width: 305px;
+	float: left;
+	margin-right: 24px;
+	background: none;
+	color: #000;
+	
+}
+
+#wellnest-content #wellnest-sidebar #sidebar .widget h4{
+	margin-top: 102px;
+	margin-bottom: 10px;
+}
+
+#wellnest-content #wellnest-sidebar #sidebar ul.twitter{
+	background: none;
+	color: #000;
+	padding: 0px;
+	font-size: 14px;
+}
+
+#wellnest-content #wellnest-sidebar #sidebar ul.twitter a{
+	color: #000;
+}
+
+#wellnest-content #wellnest-sidebar #sidebar ul.twitter  .twt-foot{
+ font-size: 12px;
+}
+
+#wellnest-content #wellnest-sidebar #mc_embed_signup .email{
+	width: 252px;
+}
+.upcoming-class-schedule{
 padding-bottom: 15px; 
 margin-bottom: 25px;
+overflow: hidden;
+border-bottom: 1px solid #ccc;	
 }
 
 #wellnest-content .newgallery{ margin-bottom: 30px;}
@@ -727,9 +847,9 @@ font-family: 'HelveticaBold';}
 #sidebar .latest-blog p{ padding: 4px 0 10px 0px; margin: 0px;}
 #sidebar .radio-show small{ display: block; font-size: 15px; color: #808080; }
 
-#sidebar .testimonials{ background:url(../images/testimonials-rep.gif) left top repeat-y; margin-top: -15px;
+#sidebar .testimonials{ background:url(/../images/testimonials-rep.gif) left top repeat-y; margin-top: -15px;
 }
-#sidebar .testimonials .top{ height: 35px; background:url(../images/testimonials.jpg) left top no-repeat;}
+#sidebar .testimonials .top{ height: 35px; background:url(/../images/testimonials.jpg) left top no-repeat;}
 #sidebar .testimonials .bottom{ background:url(../images/testimonials.jpg) left -35px no-repeat; height: 13px;
 }
 
@@ -1134,7 +1254,7 @@ input.gsc-search-button{ margin:0px!important; text-indent:-9999px!important;}
   	color: #fff;
   }
 #w-page{
-	width: 351px;
+	width: 730px;
 }
 .small-btns{
 position: absolute;
@@ -1150,38 +1270,50 @@ top: -30px;
 width: 183px;
 }
 
+/* Just for the example. Fee free to delete these three lines */
 
-/* 768px width */
-@media only screen and (max-width: 959px) and (min-width: 768px) {
-	.body { padding: 0 24px; width: 768px; margin: 0 auto; }
-	.gl { width: 430px; }
-	.gs { width: 266px; }
-	.full { width: 720x; }
-	.half { float: left; width: 348px; margin-right: 24px; }
-	.half:nth-of-type(2n) { margin-right: 0; }
-	.third, .sixth { float: left; width: 224px; margin-right: 24px; }
-	.third:nth-of-type(3n), .sixth:nth-of-type(3n) { margin-right: 0; }
-	.quarter { float: left; width: 162px; margin-right: 24px; }
-	.quarter:nth-of-type(4n) { margin-right: 0; }
+.pikachoose {width: 520px!important; float: left; margin-right: 30px;}
+
+/* Style the thumbnails */
+.pika-thumbs{ padding: 0 16px;}
+	.pika-thumbs li{ width: 144px; height:74px; margin: 10px 0 0 17px; padding: 0; overflow: hidden;
+		float: left; list-style-type: none;padding: 3px; margin: 0 5px; background: #fafafa; border: 1px solid #e5e5e5; cursor: pointer;}
+	.pika-thumbs li:last {margin: 0;}
+	.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: center; overflow: hidden;}
+	
+/* The stage is the wrapper. The image fills 100% the height of the stage */
+.pika-stage, .pika-textnav {width: 500px; overflow: hidden;
 }
-table.gsc-search-box{ padding:0px!important; margin:0px!important;}
-form.gsc-search-box{ padding:0px!important; margin:0px!important;}
+.pika-stage {position: relative; background: #fafafa; border: 1px solid #e5e5e5;text-align:center; height:450px!important;}
+.pika-stage img{height:100%;}
+.pika-stage .caption {position: absolute; background: #000; background: rgba(0,0,0,0.75);  border: 1px solid #141414; font-size: 11px; 
+			color: #fafafa; padding: 10px; text-align: right; bottom: 50px; right: 10px;}
+	.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
 
+/* Ths play, pause, prev and next buttons */
+.pika-imgnav a {position: absolute; text-indent: -5000px; display: block;z-index:3;}
+	.pika-imgnav a.previous {background: url(../images/prev.png) no-repeat left 45%; height: 100%; width: 50px; top: 10px; left: 0px;cursor:pointer;}
+	.pika-imgnav a.next {background: url(../images/next.png) no-repeat right 45%; height: 100%; width: 50px; top: 10px; right: 0px;cursor:pointer;}
+	.pika-imgnav a.play {background: url(../images/play.png) no-repeat 0% 50%; height: 100px; width: 44px;top:0;left:50%;display: none;cursor:pointer;}
+	.pika-imgnav a.pause {background: url(../images/pause.png) no-repeat 0% 50%; height: 100px; width: 44px;top:0;left:50%;display:none;cursor:pointer;}
 
-/* 480px width */
-@media only screen and (max-width: 767px) and (min-width: 480px) {
-    .body { padding: 0 24px; width: 480px; margin: 0 auto; }
-    .gl { width: 255px; } .gs { width: 157px; }
-    .full { width: 432px; }
-    .half, .third, .quarter, .sixth { float: left; width: 206px; margin-right: 24px; }
-    .third:nth-of-type(3n) { margin-right: 24px; }
-    .half:nth-of-type(2n), .third:nth-of-type(2n), .quarter:nth-of-type(2n), .sixth:nth-of-type(2n) { margin-right: 0; }
-}
+/* The previous and next textual buttons */
+.pika-textnav {overflow: hidden; margin: 10px 0 0 0;bottom:10px; position:absolute;}
+.pika-textnav a {font-size: 12px; text-decoration: none; color: #333; padding: 4px;}
+	.pika-textnav a.previous {float: left; width: auto; display: none;}
+	.pika-textnav a.next {float: right; width: auto; display: none;}
 
-/* 320px width */
-@media only screen and (max-width: 479px) {
-    .body { padding: 0 24px; width: 320px; margin: 0 auto; }
-    .gl, .gs, .full, .half, .third, .quarter { width: 272px; float: left; margin: 0; }
-    .sixth { float: left; width: 124px; margin-right: 24px; }
-    .sixth:nth-of-type(2n) { margin-right: 0; }
-}
+/*for the tool tips*/
+.pika-tooltip{font-size:12px;position:absolute;color:white;padding:3px; background-color: rgba(0,0,0,0.7);border:3px solid black;}
+.pika-counter{position: absolute;bottom: 45px;left:15px;color:white;background:rgba(0,0,0,0.7);font-size:11px;padding:3px;-moz-border-radius: 5px;border-radius:5px;}
+
+/* If using user thumbnails there's a pause well the new large image loads. This is the loader for that */		
+.pika-loader{ background:url(../images/loading.gif) 3px 3px no-repeat #000; background-color:rgba(0,0,0,0.9); color:white; width:60px; font-size:11px; padding:5px 3px; 
+	text-align:right; position:absolute; top:15px; right:15px; }
+	
+	/* jCarousel Styles */
+	/*if you're not using the carousel you can delete everything below this */
+	.jcarousel-skin-pika .jcarousel-container-horizontal { padding: 15px 0; overflow:hidden;}
+	.jcarousel-skin-pika .jcarousel-clip-horizontal {height: 90px;width: 495px;
+	overflow: hidden;}
+	.jcarousel-skin-pika .jcarousel-item-horizontal { margin-right: 10px;}

@@ -131,21 +131,40 @@
 			}, 1500);
 			return false;
 		});
-		$('.w-item-1').click(function(){
+
+		$('.w-item-2').click(function(){
 			$('html, body').animate({
 				scrollTop: $('#schedule').offset().top
 			}, 1500);
 			return false;
 		});
-		$('.w-item-2').click(function(){
+		$('.w-item-3').click(function(){
 			$('html, body').animate({
 				scrollTop: $('#event').offset().top
 			}, 1500);
 			return false;
-		});
-		$('.w-item-3').click(function(){
+		});		
+		$('.w-item-4').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#video').offset().top
+			}, 1500);
+			return false;
+		});	
+		$('.w-item-5').click(function(){
 			$('html, body').animate({
 				scrollTop: $('#about').offset().top
+			}, 1500);
+			return false;
+		});		
+		$('.w-item-6').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#connect').offset().top
+			}, 1500);
+			return false;
+		});		
+		$('.w-item-7').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#products').offset().top
 			}, 1500);
 			return false;
 		});							
@@ -202,13 +221,16 @@
 	if($req_url == 'dr-ash' || $req_url =='testimonials'  || $req_url == 'photo-gallery-3' || $req_url == 'story' || $req_url == 'radio-show') { ?>
 	<div class="page-header"><div class="body">Dr Ash – unique expertise and solutions through personal experience</div></div>
 	<?php } if($req_url == 'wellnest' || $req_url == 'location'  || $req_url == 'about' || $req_url == 'photo-gallery-2' ) {?>
-	<div class="page-header"><div class="body left">WellNest |<small>   "WellNest reopens on May 1st. New products, new classes, and new decor!"</small></div>
+	<div class="page-header"><div class="body left">wellNEST</div>
 	
 	<ul class="page-nav" id="w-page">
-		<li class="w-item-1">Class Schedule</li><span>|</span>
-		<li class="w-item-2">Events</li><span>|</span>
-		<li class="w-item-3">About</li><span>|</span>
-		<li class="w-item-4">Videos</li>
+		<li class="w-item-1">The wellNEST</li><span>|</span>
+		<li class="w-item-2">Class Schedule</li><span>|</span>
+		<li class="w-item-3">Events</li><span>|</span>
+		<li class="w-item-4">Videos</li><span>|</span>
+		<li class="w-item-5">The Trainer</li><span>|</span>
+		<li class="w-item-6">Connect & Share</li><span>|</span>
+		<li class="w-item-7">wellNEST Products</li>
 	</ul>
 	
 	</div>

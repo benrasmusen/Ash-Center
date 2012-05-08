@@ -962,7 +962,7 @@ footer.sitefooter .bottom-nav a:hover{ color: #000;}
 /* Slight reset to make the preview have ample padding. */
 #cse-search-form { background:#f4f3ef; border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px; padding:7px; width:276px;}
 #cse-search-form2{ width:313px; margin:18px 0;}
-.sitefooter input.gsc-input{ border: 1px solid #a0a0a0!important; background-image: none!important;border-right: none;
+.sitefooter input.gsc-input{ border: 1px solid #a0a0a0!important;important;border-right: none;
 }
 
 

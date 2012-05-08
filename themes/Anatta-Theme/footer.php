@@ -20,12 +20,13 @@
     border:none;
 	padding:5px 10px;
 	border:none;
-	background-image:none!important;
 	width:276px!important;
 	height:35px!important;
 	outline:none;
-	background-repeat:repeat!important;
-	background-color:transparent!important;
+	background-image: url('../images/search.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-position: 5% 50%!important;
   }
 </style>
 </div>

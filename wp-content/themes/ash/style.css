@@ -404,7 +404,6 @@ aside.layout1 {
 	display:block;
 }
 #header .logo h1 a span {
-	background:url(images/logo.jpg) left top no-repeat;
 	width:100%;
 	height:0px;
 	padding-top:51px;
@@ -445,6 +444,10 @@ aside.layout1 {
 }
 #header .user-area ul li.divider {
 	margin:0px 10px;
+}
+/* Hide extraneous divider from menu output */
+#header .user-area ul li.divider:last-child {
+	display:none;
 }
 #header .user-area ul li a {
 	color:#333333;

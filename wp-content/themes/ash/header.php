@@ -20,6 +20,10 @@
 		<script src="<?php bloginfo('template_directory') ?>/js/home.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/prettyphoto.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/browser.js"></script>
+		<style type="text/css" media="screen">
+			/* Allow for dynamic header placement. */
+			#header .logo h1 a span {background:url('<?php header_image(); ?>') left top no-repeat;}
+		</style>
 		<?php wp_head(); ?>
 	</head>
 	<body class="home">
@@ -44,11 +48,13 @@
 					<!-- /Contact-->
 					<section class="user-area">
 						<ul class="clearfix">
-							<li><a href="http://ws1713-1151.staging.nitrosell.com/store/" target="_blank">Store</a></li>
-							<li class="divider">|</li>
-							<li><a href="wellnest.html">WellNEST</a></li>
-							<li class="divider">|</li>
-							<li><a href="dr-ash.html">Richard Ash, MD</a></li>
+							<?php wp_nav_menu(array(
+								'theme_location'  => 'header_top_right',
+								'container'       => false, 
+								'echo'            => true,
+								'depth'           => 0,
+								'after' => '<li class="divider">|</li>'
+							)); ?>
 						</ul>
 					</section>
 				</div>

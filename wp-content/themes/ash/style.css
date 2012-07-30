@@ -1410,6 +1410,16 @@ ul.list1 li .description h3 {
 	color:#91a497;
 	margin-bottom:5px;
 }
+ul.list1 li .description h3 a,
+ul.list1 li .description h3 a:hover {
+	font-size:12px;
+	color:#91a497;
+	margin-bottom:5px;
+}
+ul.list1 li a img,
+ul.list1 li a:hover img {
+	border:none;
+}
 /*---- List2 ----*/
 ul.list2 {
 	padding-top:10px;

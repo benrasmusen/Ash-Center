@@ -1028,6 +1028,7 @@ section.post ul.list5.flR li {
 	background:#e5e5e5;
 	padding:10px 69px 10px 68px;
 	margin-bottom:35px;
+	overflow:auto;
 }
 #newsletter-form h2 {
 	line-height:29px;
@@ -1039,8 +1040,18 @@ section.post ul.list5.flR li {
 #newsletter-form .form {
 	float:right;
 }
-#newsletter-form .form span.textbox {
-	height:19px;
+#newsletter-form .form #mc_signup {
+	margin-top:-5px;
+}
+#newsletter-form .form #mc_message strong {
+	font-weight:normal;
+	font-size:12px;
+}
+#newsletter-form .form label.mc_var_label {
+	display:none;
+}
+#newsletter-form .form div.mc_merge_var {
+	height:29px;
 	width:320px;
 	line-height:19px;
 	background:#fff;
@@ -1049,7 +1060,7 @@ section.post ul.list5.flR li {
 	float:left;
 	margin-right:6px;
 }
-#newsletter-form .form span.textbox input.textbox {
+#newsletter-form .form input.mc_input {
 	font-size:12px;
 	padding:0px;
 	color:#333;
@@ -1059,7 +1070,14 @@ section.post ul.list5.flR li {
 	border:0px;
 	background:none;
 }
-#newsletter-form .form input.submit {
+#newsletter-form .form div.mc_form_inside {
+	overflow:auto;
+}
+#newsletter-form .form div.mc_signup_submit,
+#newsletter-form .form div.mc_merge_var {
+	float:left;
+}
+#newsletter-form .form input#mc_signup_submit {
 	background:url(images/submit-btn.gif) left top no-repeat;
 	width:82px;
 	height:20px;
@@ -1069,10 +1087,10 @@ section.post ul.list5.flR li {
 	padding:0px;
 	margin-top:5px;
 }
-#newsletter-form .form input.submit:hover {
+#newsletter-form .form input#mc_signup_submit:hover {
 	background:url(images/submit-btn.gif) left bottom no-repeat;
 }
-#newsletter-form .form input.submit:active {
+#newsletter-form .form input#mc_signup_submit:active {
 	background:url(images/submit-btn.gif) left top no-repeat;
 }
 /*---- Footer Navigation ----*/

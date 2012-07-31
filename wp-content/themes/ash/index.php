@@ -30,26 +30,16 @@
 				
 			<?php endwhile; // end of the loop. ?>
 				
-			<!-- Sidebar-->
-			<aside>
-				<section class="widget box2">
-					<h2>Learning More</h2>
-					<h3>Patient Information Center</h3>
-					<p>For a more detailed look at the conditions we address and our treatment plans, visit the Reference library in our Patient Information Center.</p>
-					<p><a href="treatments-overview.html" class="button1">Read the info</a></p>
-					<p><span class="divider">&nbsp;</span></p>
-					<h3>Contact Us</h3>
-					<p>Phone:  212-758-3200<br />
-						Fax: 212-754-5800<br />
-						Email: <a href="mailto:nfo@ashcenter.com">info@ashcenter.com</a></p>
-					<p>Address: <br />
-						800A Fifth Avenue <br />
-						(Corner of 61st Street)  Suite 205 <br />
-						New York, NY 10065</p>
-					<div class="map"> <img src="/wp-content/themes/ash/images/google-map.jpg" alt="Map" /> </div>
-				</section>
-			</aside>
-			<!-- /Sidebar--> 
+			<?php if (function_exists('dynamic_sidebar')): ?>
+				<!-- Sidebar-->
+				<aside>
+					<section class="widget box2">
+						<h2>Learning More</h2>
+						<?php dynamic_sidebar('learning-more') ?>
+					</section>
+				</aside>
+				<!-- /Sidebar--> 
+			<?php endif ?>
 			
 		</div>
 		

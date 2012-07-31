@@ -735,6 +735,10 @@ body.home .widget p {
 	position:relative;
 	margin-bottom:-10px;
 }
+.post.no-post-thumb .entry {
+	float:none;
+	width:100%;
+}
 .post .entry p {
 	margin-bottom:27px;
 }

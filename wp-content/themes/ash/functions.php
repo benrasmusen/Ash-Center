@@ -29,6 +29,9 @@ if (function_exists('add_theme_support')) {
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size(104, 58, true); // default Post Thumbnail dimensions
 	
+	// Additional resize dimensions
+	add_image_size('page-side-content', 287, 418); // for image to the left of page content
+	
 }
 
 require_once('includes/theme-functions.php');

@@ -10,12 +10,17 @@
 				<!-- Title-->
 				<section class="title">
 					<h1><?php the_title() ?></h1>
-					<p></p>
+					<?php if ($byline = get_post_meta($post->ID, 'byline', true)): ?>
+						<p><?php echo $byline ?></p>
+					<?php endif ?>
 				</section>
 				<!-- /Title--> 
 				<!-- Main-->
 				<div id="main">
 					<article class="post clearfix<?php if (!has_post_thumbnail()) echo ' no-post-thumb' ?>">
+						<?php if ($subheading = get_post_meta($post->ID, 'subheading', true)): ?>
+							<h2><?php echo $subheading ?></h2>
+						<?php endif ?>
 						<?php
 						if (has_post_thumbnail()) {
 							the_post_thumbnail('page-side-content', array('class' => 'alignleft'));

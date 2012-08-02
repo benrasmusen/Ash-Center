@@ -15,11 +15,13 @@
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script src="<?php bloginfo('template_directory') ?>/js/jquery-1.7.1.min.js"></script>
+		<script src="<?php bloginfo('template_directory') ?>/js/jcarousellite_1.0.1.min.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/jquery.prettyPhoto.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/jquery.cycle.all.min.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/home.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/prettyphoto.js"></script>
 		<script src="<?php bloginfo('template_directory') ?>/js/browser.js"></script>
+		<script src="<?php bloginfo('template_directory') ?>/js/scroller.js"></script>
 		<style type="text/css" media="screen">
 			/* Allow for dynamic header placement. */
 			#header .logo h1 a span {background:url('<?php header_image(); ?>') left top no-repeat;}

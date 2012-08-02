@@ -31,6 +31,7 @@ if (function_exists('add_theme_support')) {
 	
 	// Additional resize dimensions
 	add_image_size('page-side-content', 287, 418); // for image to the left of page content
+	add_image_size('gallery-thumbnail', 144, 112, true); // for gallery thumbail images
 	
 	// Learning More widget for content pages
 	register_sidebar(array(

@@ -819,6 +819,7 @@ section.post ul.list5.flR li {
   visibility: visible;
   width: 615px !important;
   z-index: 2;
+  margin-bottom:20px;
 }
 .tour-the-center h2 {
 	font-size:18px;
@@ -1781,6 +1782,10 @@ body.home #footer-navigation ul li ul li a {
 }
 #main .box5.testimonial {
 	margin-bottom:21px;
+}
+body.testimonials .post .entry,
+body.in-the-news .post .entry {
+	padding-right:0px;
 }
 #main .box5.last {
 	margin-bottom:0;

@@ -38,10 +38,13 @@
 			<?php if (function_exists('dynamic_sidebar')): ?>
 				<!-- Sidebar-->
 				<aside>
-					<section class="widget box2">
-						<h2>Learning More</h2>
-						<?php dynamic_sidebar('learning-more') ?>
-					</section>
+					<?php 
+					$dynamic_page_sidebar = get_post_meta($post->ID, 'dynamic_page_sidebar', true);
+					if (!$dynamic_page_sidebar) {
+						$dynamic_page_sidebar = 'learning-more';
+					}
+					?>
+					<?php dynamic_sidebar($dynamic_page_sidebar) ?>
 				</aside>
 				<!-- /Sidebar--> 
 			<?php endif ?>

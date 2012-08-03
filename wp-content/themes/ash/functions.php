@@ -91,6 +91,17 @@ if (function_exists('add_theme_support')) {
 	    'description' => __('This sidebar is for the Dr. Ash page.'),
 	));
 	
+	// Blog sidebar
+	register_sidebar(array(
+	    'id' => 'blog-sidebar',
+	    'name' => __('Blog'),
+		'before_title' => "<h3>\n",
+		'after_title' => "</h3>\n",
+		'before_widget' => "",
+		'after_widget' => "",
+	    'description' => __('This sidebar is for the blog index.'),
+	));
+	
 }
 
 // Meta boxes

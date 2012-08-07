@@ -11,27 +11,27 @@ Template Name: Home Page
 			<ul class="clearfix">
 				<li> 
 					<img src="<?php bloginfo('template_url'); ?>/images/image1.jpg" alt="image1" />
-					<h2 class="double-line"><a href="#">ARE YOU SICK &amp; TIRED OF<br />BEING SICK &amp; TIRED?</a></h2>
+					<h2 class="double-line"><a href="<?php echo home_url('/whats-making-you-sick-tired/') ?>">ARE YOU SICK &amp; TIRED OF<br />BEING SICK &amp; TIRED?</a></h2>
 					<p>Richard Ash, MD’s  unique expertise, personal experience and pioneering discoveries have helped over 25,000 people find relief from chronic illness. </p>
-					<a href="whats-making-you-sick-overview.html" class="button1">Good Health is here</a>
+					<a href="<?php echo home_url('/whats-making-you-sick-tired/') ?>" class="button1">Good Health is here</a>
 				</li>
 				<li> 
 					<img src="<?php bloginfo('template_url'); ?>/images/image2.jpg" alt="image2" />
-					<h2 class="double-line"><a href="#">EXPERTISE from <br /> EXPERIENCE</a></h2>
+					<h2 class="double-line"><a href="<?php echo home_url('/dr-ash/') ?>">EXPERTISE from <br /> EXPERIENCE</a></h2>
 					<p>He has developed a program that achieves dramatic, lasting improvement for patients who have not found relief from conventional methods.</p>
-					<a href="dr-ash.html" class="button1">read his story</a> 
+					<a href="<?php echo home_url('/dr-ash/') ?>" class="button1">read his story</a> 
 				</li>
 				<li> 
 					<img src="<?php bloginfo('template_url'); ?>/images/image3.jpg" alt="image3" />
-					<h2><a href="#">GET healthy, STAY healthy</a></h2>
+					<h2><a href="<?php echo home_url('/the-pure-essentials-story/') ?>">GET healthy, STAY healthy</a></h2>
 					<p>Richard Ash, MD’s line of Pure Essentials vitamins and supplements compose a true modern-day pharmacy from weight loss to allergies to stress.</p>
-					<a href="pure-essentials.html" class="button1">feel better faster</a> 
+					<a href="<?php echo home_url('/the-pure-essentials-story/') ?>" class="button1">feel better faster</a> 
 				</li>
 				<li class="last"> 
 					<img src="<?php bloginfo('template_url'); ?>/images/image4.jpg" alt="image4" />
-					<h2><a href="#">Feel GREAT for LIFE</a></h2>
+					<h2><a href="<?php echo home_url('/wellnest/') ?>">Feel GREAT for LIFE</a></h2>
 					<p>WellNEST is progressive alternative-health lifestyle experience and offers classes, courses and a community committed to great life.</p>
-					<a href="wellnest.html" class="button1">gain sustainable health</a> 
+					<a href="<?php echo home_url('/wellnest/') ?>" class="button1">gain sustainable health</a> 
 				</li>
 			</ul>
 		</div>
@@ -49,7 +49,7 @@ Template Name: Home Page
 								<div>
 									<h2><span>End joint pain without surgery:</span><br />Reconstructive Therapy and/or <br />Enhanced Platelet Rich Plasma (PRP) Therapy</h2>
 									<p>Lower back pain and joint pain are among the most common and debilitating health complaints today. Traditional medicine can offer pain relief through prescription drugs, and surgery removes the structure weakening the joint without correcting the cause of the problem.</p>
-									<a href="end-joint-pain.html" class="more">KNOW MORE</a>
+									<a href="<?php echo home_url('/end-joint-pain/') ?>" class="more">KNOW MORE</a>
 								</div>
 							</div>
 							<div class="slide box22">
@@ -187,12 +187,5 @@ Template Name: Home Page
 					</aside>
 					<!-- /Sidebar--> 
 				</div>
-			
-			<?php get_template_part('pre-footer') ?>
-			<?php get_template_part('newsletter-form') ?>
-			
-		</div>
-	</div>
-	<!-- /Content-->
 
-<?php get_footer(); ?>
+		<?php get_footer(); ?>

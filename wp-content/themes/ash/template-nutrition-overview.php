@@ -56,12 +56,5 @@ Template Name: Nutrition Overview
 			<!-- /Sidebar-->
 			
 		</div>
-		
-		<?php get_template_part('pre-footer') ?>
-		
-		<?php get_template_part('newsletter-form') ?>
-		
-	</div>
-	<!-- /Content-->
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
-		<title><?php echo ($post->post_name == 'home') ? 'Home' : wp_title(''); ?> | <?php bloginfo('name'); ?></title>
+		<title><?php echo (isset($post) && $post->post_name == 'home') ? 'Home' : wp_title(''); ?> | <?php bloginfo('name'); ?></title>
 		<!-- http://google.com/webmasters -->
 		<meta name="google-site-verification" content="" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -28,7 +28,7 @@
 		</style>
 		<?php wp_head(); ?>
 	</head>
-	<body class="<?php echo $post->post_name ?>">
+	<body class="<?php if (isset($post)) echo $post->post_name; ?>">
 		<div id="container"> 
 			<!-- Header-->
 			<header id="header" class="clearfix">

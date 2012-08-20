@@ -29,9 +29,6 @@ Template Name: Blog Index
 								<span class="metadata">Posted by <?php the_modified_author() ?>, on <?php the_modified_date() ?></span>
 								<?php if (has_post_thumbnail()): ?>
 									<?php the_post_thumbnail(); ?>
-								<?php else: ?>
-									<!-- TODO: Replace with placeholder image if no featured image exists -->
-									<img src="<?php bloginfo('template_url'); ?>/images/blog/image1.jpg" alt="image1" />
 								<?php endif ?>
 								<?php the_excerpt(); ?>
 								<section class="post-footer clearfix"> <a class="button1" href="<?php the_permalink() ?>">Read the Full Story</a> <a class="comments" href="<?php comments_link() ?>"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></a> </section>

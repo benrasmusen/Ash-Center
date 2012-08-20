@@ -39,16 +39,13 @@
 								<?php $my_query = new WP_Query('posts_per_page=3'); ?>
 								<?php if ($my_query->have_posts()): ?>
 									<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-										<li class="clearfix">
+										<li class="clearfix<?php if (!has_post_thumbnail()) echo " no-thumb"  ?>">
 											<div class="description">
 												<h3><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h3>
 												<p><?php echo custom_home_excerpt(120); ?></p>
 											</div>
 											<?php if (has_post_thumbnail()): ?>
 												<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail(); ?></a>
-											<?php else: ?>
-												<!-- TODO: Replace with placeholder image if no featured image exists -->
-												<img src="<?php bloginfo('template_url'); ?>/images/blog/image1.jpg" alt="image1" />
 											<?php endif ?>
 										</li>
 									<?php endwhile; ?>

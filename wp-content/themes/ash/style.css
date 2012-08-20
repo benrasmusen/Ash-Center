@@ -1148,9 +1148,11 @@ section.post ul.list5.flR li {
 }
 #footer .first-visitor {
 	width:330px;
-	position:absolute;
-	bottom:0px;
-	right:0px;
+	position: fixed;
+	right: 100px;
+	bottom: 0px;
+	z-index: 999;
+	height:auto;
 	padding:13px 16px 13px;
 }
 #footer .first-visitor h2 a.down-btn {

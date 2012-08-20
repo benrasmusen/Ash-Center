@@ -159,7 +159,7 @@
 						<h2 class="clearfix"><a href="#" class="down-btn">&nbsp;</a>Are you a first time visitor?</h2>
 						<div class="inner">
 							<p>Learn about the top things to do at<br /> aschcenter.com</p>
-							<a href="dr-ash.html" class="button2">Show me</a>
+							<a href="<?php echo home_url('/dr-ash/') ?>" class="button2">Show me</a>
 						</div>
 					</section>
 				</div>

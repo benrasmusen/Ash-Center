@@ -20,7 +20,7 @@ Template Name: Blog Index
 					<article class="post clearfix">
 						<?php while ( have_posts() ) : the_post(); ?>
 							<section class="post-header">
-								<a class="comments" href="<?php comments_link() ?>"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></a> 
+								<a class="comments" href="<?php comments_link() ?>"><?php echo __( 'Comments' )?> </a> 
 								<h2><?php the_title(); ?></h2>
 								<p>Posted by <?php the_author() ?>, on <?php the_modified_date() ?></p>
 							</section>
@@ -34,8 +34,8 @@ Template Name: Blog Index
 						<?php endwhile; ?>
 					</article>
 					
-					<?php comments_template(); ?>
-					
+					<div id="comments" class="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="2" data-width="695"></div>
+
 				</div>
 				<!-- /Main--> 
 				
@@ -48,12 +48,5 @@ Template Name: Blog Index
 			<?php endif ?>
 			
 		</div>
-		
-		<?php get_template_part('pre-footer') ?>
-		
-		<?php get_template_part('newsletter-form') ?>
-		
-	</div>
-	<!-- /Content-->
 
 <?php get_footer(); ?>

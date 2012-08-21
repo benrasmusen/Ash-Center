@@ -22,7 +22,7 @@ Template Name: Blog Index
 							<section class="post-header">
 								<a class="comments" href="<?php comments_link() ?>"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></a> 
 								<h2><?php the_title(); ?></h2>
-								<p>Posted by <?php the_modified_author() ?>, on <?php the_modified_date() ?></p>
+								<p>Posted by <?php the_author() ?>, on <?php the_modified_date() ?></p>
 							</section>
 							<?php
 							if (has_post_thumbnail()) {

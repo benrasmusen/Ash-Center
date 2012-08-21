@@ -1147,13 +1147,12 @@ section.post ul.list5.flR li {
 	line-height:34px;
 }
 #footer .first-visitor {
-	width:330px;
+	width: 330px;
 	position: fixed;
-	right: 100px;
-	bottom: 0px;
 	z-index: 999;
-	height:auto;
-	padding:13px 16px 13px;
+	bottom: 0px;
+	right: 0px;
+	padding: 13px 16px 13px;
 }
 #footer .first-visitor h2 a.down-btn {
 	background:url(images/icons.png) left -333px no-repeat;
@@ -1165,7 +1164,9 @@ section.post ul.list5.flR li {
 #footer .first-visitor h2 a.down-btn:hover {
 	text-decoration:none;
 }
-#footer .first-visitor .inner { display:none; margin-bottom:10px; }
+#footer .first-visitor .inner { 
+	margin-bottom:10px; 
+}
 #footer .first-visitor h2 {
 	font-size:18px;
 	cursor:pointer;

@@ -21,10 +21,10 @@
 				</div>
 				<!-- /Main--> 
 				
-			<?php if (function_exists('dynamic_sidebar')): ?>
+			<?php if ( function_exists( 'dynamic_sidebar' ) ): ?>
 				<!-- Sidebar-->
 				<aside>
-					<?php dynamic_sidebar('learning-more') ?>
+					<?php dynamic_sidebar( 'learning-more' ) ?>
 				</aside>
 				<!-- /Sidebar--> 
 			<?php endif ?>

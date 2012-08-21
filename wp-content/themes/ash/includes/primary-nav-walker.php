@@ -24,7 +24,7 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 	 * @author Ben Rasmusen <mail@benrasmusen.com>
 	 */
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
-		if ($depth == 1) {
+		if ( $depth == 1 ) {
 			$output .= "<ul>\n";
 		}
 	}
@@ -39,7 +39,7 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 	 * @author Ben Rasmusen <mail@benrasmusen.com>
 	 */
 	function end_lvl( &$output, $depth = 0, $args = array() ) {
-		if ($depth == 1) {
+		if ( $depth == 1 ) {
 			$output .= "</ul>\n";
 		}
 	}
@@ -54,40 +54,40 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 	 * @return void
 	 * @author Ben Rasmusen <mail@benrasmusen.com>
 	 */
-	function start_el(&$output, $item, $depth, $args) {
+	function start_el( &$output, $item, $depth, $args ) {
 		
-		switch ($depth) {
+		switch ( $depth ) {
 			case 0:
-				if ($item->has_children) {
-					$class = ($item->last_in_menu) ? ' last' : null;
+				if ( $item->has_children ) {
+					$class = (  $item->last_in_menu  ) ? ' last' : null;
 					$output .=  "\n". '<li class="parent' . $class . '">' . "\n";
-					$output .= '<a href="' . esc_attr($item->url) . '">' . apply_filters('the_title', $item->title, $item->ID) . '</a>';
+					$output .= '<a href="' . esc_attr( $item->url ) . '">' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>';
 					$output .= '<section class="dropdown clearfix">' . "\n";
 				} else {
-					$class = ($item->last_in_menu) ? ' class="last"' : null;
+					$class = ( $item->last_in_menu ) ? ' class="last"' : null;
 					$output .= '<li' . $class . '>' . "\n";
-					$output .= '<a href="' . esc_attr($item->url) . '">' . apply_filters('the_title', $item->title, $item->ID) . '</a>' . "\n";
+					$output .= '<a href="' . esc_attr( $item->url ) . '">' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>' . "\n";
 				}
 				break;
 				
 			case 1:
-				$last_class = ($this->_last_menu_order == $item->menu_order) ? ' last' : null;
-				if ($item->has_children) {
+				$last_class = ( $this->_last_menu_order == $item->menu_order ) ? ' last' : null;
+				if ( $item->has_children ) {
 					$output .= '<section class="section' . $last_class . '">' . "\n";
-					$output .= '<h2>' . apply_filters('the_title', $item->title, $item->ID) . '</h2>' . "\n";
-					$output .= '<p>' . esc_attr($item->description) . '</p>';
+					$output .= '<h2>' . apply_filters( 'the_title', $item->title, $item->ID ) . '</h2>' . "\n";
+					$output .= '<p>' . esc_attr( $item->description ) . '</p>';
 				} else {
 					$output .= '<section class="section' . $last_class . '">';
-					$output .= '<h2>' . apply_filters('the_title', $item->title, $item->ID) . '</h2>' . "\n";
-					$output .= '<p>' . esc_attr($item->description) . '</p>' . "\n";
+					$output .= '<h2>' . apply_filters( 'the_title', $item->title, $item->ID ) . '</h2>' . "\n";
+					$output .= '<p>' . esc_attr( $item->description ) . '</p>' . "\n";
 					$output .= '<ul>';
-					$output .= '<li><a href="'.esc_attr($item->url).'">Learn more</a> </li>' . "\n";
+					$output .= '<li><a href="'.esc_attr( $item->url ).'">Learn more</a> </li>' . "\n";
 					$output .= '</ul>' . "\n";
 				}
 				break;
 				
 			case 2:
-				$output .= '<li><a href="'.esc_attr($item->url).'">' . apply_filters('the_title', $item->title, $item->ID) . '</a>';
+				$output .= '<li><a href="'.esc_attr( $item->url ).'">' . apply_filters( 'the_title', $item->title, $item->ID ) . '</a>';
 				break;
 		}
 		
@@ -104,9 +104,9 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 	 * @author Ben Rasmusen <mail@benrasmusen.com>
 	 */
 	function end_el( &$output, $item, $depth = 0, $args = array() ) {
-		switch ($depth) {
+		switch ( $depth ) {
 			case 0:
-				if ($item->has_children) {
+				if ( $item->has_children ) {
 					$output .= "</section>\n</li>\n";
 				} else {
 					$output .= "</li>\n";
@@ -138,28 +138,28 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 	 */
 	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
 		
-		if ( !$element )
+		if ( ! $element )
 			return;
 
 		$id_field = $this->db_fields['id'];
 		$element->has_children = false;
 		
 		// START CUSTOM: Some massaging to make sure that we can differentiate between parent menu items
-		if (!empty($children_elements[$element->$id_field])) {
+		if ( !empty( $children_elements[$element->$id_field] ) ) {
 			$element->has_children = true;
-			if ($depth == 0) {
-				$child_orders = array();
-				foreach ($children_elements[$element->$id_field] as $child) {
+			if ( $depth == 0 ) {
+				$child_orders = array(  );
+				foreach ( $children_elements[$element->$id_field] as $child ) {
 					$child_orders[] = $child->menu_order;
 				}
-				$this->_last_menu_order = end($child_orders);
+				$this->_last_menu_order = end( $child_orders );
 			}
 		}
 		// END CUSTOM
 		
 		//display this element
-		$cb_args = array_merge( array(&$output, $element, $depth), $args);
-		call_user_func_array(array(&$this, 'start_el'), $cb_args);
+		$cb_args = array_merge( array( &$output, $element, $depth ), $args);
+		call_user_func_array( array( &$this, 'start_el' ), $cb_args) ;
 
 		$id = $element->$id_field;
 
@@ -179,16 +179,16 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 			unset( $children_elements[ $id ] );
 		}
 
-		if ( isset($newlevel) && $newlevel ){
+		if ( isset( $newlevel ) && $newlevel ) {
 			//end the child delimiter
 			//display this element
-			$cb_args = array_merge( array(&$output, $depth), $args);
-			call_user_func_array(array(&$this, 'end_lvl'), $cb_args);
+			$cb_args = array_merge( array( &$output, $depth ), $args );
+			call_user_func_array( array( &$this, 'end_lvl' ), $cb_args );
 		}
 
 		//end this element
-		$cb_args = array_merge( array(&$output, $element, $depth), $args);
-		call_user_func_array(array(&$this, 'end_el'), $cb_args);
+		$cb_args = array_merge( array( &$output, $element, $depth ), $args );
+		call_user_func_array( array( &$this, 'end_el' ), $cb_args );
 	}
 	
 	/**
@@ -200,15 +200,15 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 	 * @return string
 	 * @author Ben Rasmusen <mail@benrasmusen.com>
 	 */
-	function walk( $elements, $max_depth) {
+	function walk( $elements, $max_depth ) {
 
-		$args = array_slice(func_get_args(), 2);
+		$args = array_slice( func_get_args(), 2 );
 		$output = '';
 
-		if ($max_depth < -1) //invalid parameter
+		if ( $max_depth < -1 ) //invalid parameter
 			return $output;
 
-		if (empty($elements)) //nothing to walk
+		if ( empty( $elements ) ) //nothing to walk
 			return $output;
 
 		$id_field = $this->db_fields['id'];
@@ -230,7 +230,7 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 		 */
 		$top_level_elements = array();
 		$children_elements  = array();
-		foreach ( $elements as $e) {
+		foreach ( $elements as $e ) {
 			if ( 0 == $e->$parent_field )
 				$top_level_elements[] = $e;
 			else
@@ -241,14 +241,14 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 		 * when none of the elements is top level
 		 * assume the first one must be root of the sub elements
 		 */
-		if ( empty($top_level_elements) ) {
+		if ( empty( $top_level_elements ) ) {
 
 			$first = array_slice( $elements, 0, 1 );
 			$root = $first[0];
 
 			$top_level_elements = array();
 			$children_elements  = array();
-			foreach ( $elements as $e) {
+			foreach ( $elements as $e ) {
 				if ( $root->$parent_field == $e->$parent_field )
 					$top_level_elements[] = $e;
 				else
@@ -257,10 +257,10 @@ class PrimaryNavWalker extends Walker_Nav_Menu {
 		}
 		
 		// START CUSTOM: Add a new attribute to determine last in series
-		$last_el = end($top_level_elements);
+		$last_el = end( $top_level_elements );
 		foreach ( $top_level_elements as $e ) {
 			$e->last_in_menu = false;
-			if ($last_el->ID == $e->ID) {
+			if ( $last_el->ID == $e->ID ) {
 				$e->last_in_menu = true;
 			}
 			$this->display_element( $e, $children_elements, $max_depth, 0, $args, $output );

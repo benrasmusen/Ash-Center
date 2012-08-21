@@ -14,15 +14,15 @@ Template Name: Nutrition
 				
 				<!-- Breadcrumb -->
 				<div id="breadcrumbs">
-					<?php if(function_exists('custom_page_breadcrumbs')) {
-						echo custom_page_breadcrumbs(array('skip_home' => true));
+					<?php if( function_exists( 'custom_page_breadcrumbs' ) ) {
+						echo custom_page_breadcrumbs( array( 'skip_home' => true ) );
 					} ?>
 				</div>
 				<!-- Breadcrumb --> 
 				<!-- Title-->
 				<section class="title">
-					<h1><?php echo get_the_title($post->post_parent); ?></h1>
-					<?php if ($byline = get_post_meta($post->post_parent, 'byline', true)): ?>
+					<h1><?php echo get_the_title( $post->post_parent ); ?></h1>
+					<?php if ( $byline = get_post_meta( $post->post_parent, 'byline', true ) ): ?>
 						<p><?php echo $byline ?></p>
 					<?php endif ?>
 				</section>
@@ -40,7 +40,7 @@ Template Name: Nutrition
 			<!-- Sidebar-->
 			<aside class="layout1">
 				<section id="sidebar-nav" class="box2">
-					<?php get_template_part('child-pages-navigation', 'nutrition') ?>
+					<?php get_template_part( 'child-pages-navigation', 'nutrition' ) ?>
 				</section>
 			</aside>
 			<!-- /Sidebar-->

@@ -155,13 +155,15 @@
 					</section>
 					<br class="clear" />
 					<p><span class="center">&copy; 2012. Dr. Ash Center</span></p>
-					<section class="box1 first-visitor">
-						<h2 class="clearfix"><a href="#" class="down-btn">&nbsp;</a>Are you a first time visitor?</h2>
-						<div class="inner">
-							<p>Learn about the top things to do at<br /> aschcenter.com</p>
-							<a href="<?php echo home_url( '/dr-ash/' ) ?>" class="button2">Show me</a>
-						</div>
-					</section>
+					<?php if (is_page('home')): ?>
+						<section class="box1 first-visitor">
+							<h2 class="clearfix"><a href="#" class="down-btn">&nbsp;</a>Are you a first time visitor?</h2>
+							<div class="inner">
+								<p>Learn about the top things to do at<br /> aschcenter.com</p>
+								<a href="<?php echo home_url( '/dr-ash/' ) ?>" class="button2">Show me</a>
+							</div>
+						</section>
+					<?php endif ?>
 				</div>
 	  		</footer>
 		</div>
